@@ -1,0 +1,403 @@
+{
+    "active": false,
+    "description": "Vanilla season 3 in spring!",
+    "gallery": [
+        {
+            "description": "First photo of the Ancient City while we were entering it.",
+            "file": "ancient_city_full.png",
+            "name": "Ancient City (Full)"
+        },
+        {
+            "description": "The piston glitch we were using to attempt to locate an Ancient City.",
+            "file": "ancient_city_glitch.png",
+            "name": "Ancient City Glitch"
+        },
+        {
+            "description": "Photo of the arctic biome K4ffu was going to use as a base.",
+            "file": "arctic.png",
+            "name": "Arctic"
+        },
+        {
+            "description": "All of the Axolotls we had in our aquarium under the main base.",
+            "file": "axo_wtf.png",
+            "name": "Axolotl -- Wtf?"
+        },
+        {
+            "description": "Screenshot of the general base area from Dynmap on 03/18/23.",
+            "file": "base.png",
+            "name": "Base Screenshot"
+        },
+        {
+            "description": "Screenshot of DmmD's Goose Resource Pack death message.",
+            "file": "best_resource_pack.png",
+            "name": "Best Resource Pack"
+        },
+        {
+            "description": "Emy saying \"BRUH\" in chat.",
+            "file": "bruh.png",
+            "name": "BRUH"
+        },
+        {
+            "description": "DmmD, Emy, and iiPython building the iron farm (overworld).",
+            "file": "building_iron_farm.png",
+            "name": "Building Iron Farm"
+        },
+        {
+            "description": "DmmD clutches after getting nearly blown up twice.",
+            "file": "clutch.png",
+            "name": "Clutch"
+        },
+        {
+            "description": "DmmD riding on Emy's head in the newly constructed \"mob free\" zone.",
+            "file": "dmmd_and_emy.png",
+            "name": "DmmD and Emy"
+        },
+        {
+            "description": "DmmD and Emy chillin' in the gunpowder farm.",
+            "file": "dmmd_and_emy_2.png",
+            "name": "DmmD and Emy 2"
+        },
+        {
+            "description": "The early emerald wealth that DmmD had while building the trading center.",
+            "file": "dmmd_emeralds.png",
+            "name": "DmmD's Emeralds"
+        },
+        {
+            "description": "Portrait of DmmD standing outside of iiPython's first house.",
+            "file": "dmmd_standing.png",
+            "name": "DmmD Standing"
+        },
+        {
+            "description": "DmmD majestically staring off into the sunset, photo courtesy of Emy.",
+            "file": "dmmd_sunset.png",
+            "name": "DmmD Sunset"
+        },
+        {
+            "description": "Photo of a Drowned holding a Fork outside of iiPython's first house.",
+            "file": "drowned_with_fork.png",
+            "name": "Drowned w/ Fork"
+        },
+        {
+            "description": "iiPython's valuable chest oafter the season's first week.",
+            "file": "early_iipython_wealth.png",
+            "name": "Early iiPython Wealth"
+        },
+        {
+            "description": "Portrait of Emy staring up at DmmD in a random mineshaft.",
+            "file": "emy.png",
+            "name": "Emy Staring"
+        },
+        {
+            "description": "Photo of the North side of Emy's farm.",
+            "file": "emy_farm_1.png",
+            "name": "Emy's Farm (North)"
+        },
+        {
+            "description": "Newer expansion of Emy's farm towards the west side of base.",
+            "file": "emy_farm_expansion.png",
+            "name": "Emy's Farm Expansion (West)"
+        },
+        {
+            "description": "Screenshot of Emy's farm on DmmD's minimap.",
+            "file": "emy_farm_on_minimap.png",
+            "name": "Emy's Farm on Minimap"
+        },
+        {
+            "description": "Emy's llamas just vibing outside the new base.",
+            "file": "emy_llama_nation.png",
+            "name": "Emy's Llamas"
+        },
+        {
+            "description": "Emy's llamas vibing even harder with their new drip.",
+            "file": "emy_rgb_llamas.png",
+            "name": "Emy's Llamas w/ Drip"
+        },
+        {
+            "description": "Zoom in on Emy while she was in the middle of typing.",
+            "file": "emy_thinking.png",
+            "name": "Emy Thinking"
+        },
+        {
+            "description": "Random tunnel Emy made on bedrock level near the main mineshaft.",
+            "file": "emyhall.png",
+            "name": "Emy Mineshaft/Hall"
+        },
+        {
+            "description": "First enchanting table crafted on Season 3.",
+            "file": "enchantment_table.png",
+            "name": "Enchanting Table"
+        },
+        {
+            "description": "Photo of Emy's farm from the view of the first base.",
+            "file": "farm.png",
+            "name": "Farm (Inside View)"
+        },
+        {
+            "description": "Initial view of the farm when it was still iiPython's and not Emy's.",
+            "file": "farm2.png",
+            "name": "Farm (Outside View)"
+        },
+        {
+            "description": "Really cute house that Fepi made before logging off and never showing up again.",
+            "file": "fepis_house.png",
+            "name": "Fepi's House"
+        },
+        {
+            "description": "The near-infinite firework supply we had thanks to the new gunpowder farm.",
+            "file": "fireworks.png",
+            "name": "Infinite Fireworks"
+        },
+        {
+            "description": "The first diamond vein found on the server by DmmD.",
+            "file": "first_diamond.png",
+            "name": "First Diamonds"
+        },
+        {
+            "description": "Photo of the outside of iiPython's first house on the first day.",
+            "file": "first_home.png",
+            "name": "First Home"
+        },
+        {
+            "description": "DmmD's fish market, hailing all the way from day 2 of the server.",
+            "file": "fish_market.png",
+            "name": "DmmD's Fish Market"
+        },
+        {
+            "description": "DmmD and Emy going fishing where DmmD's future house would end up.",
+            "file": "fishy_business.png",
+            "name": "Fishy Business"
+        },
+        {
+            "description": "Emy holding a Fork.",
+            "file": "fork.png",
+            "name": "Fork"
+        },
+        {
+            "description": "Random photo of some Glowsquid in a cave near our first base.",
+            "file": "glowsquid.png",
+            "name": "Glowsquid"
+        },
+        {
+            "description": "Chillin' in an igloo while DmmD tried to get goat horns.",
+            "file": "goat_horn_igloo.png",
+            "name": "The Igloo of Goat Horns"
+        },
+        {
+            "description": "Random island that always had a horse on it, for some reason.",
+            "file": "horse_island.png",
+            "name": "Horse Island"
+        },
+        {
+            "description": "Figuring out how the hugging animation worked in Not Enough Animations.",
+            "file": "hugging_in_nether.png",
+            "name": "Hugging in the Nether"
+        },
+        {
+            "description": "Random photo of iiPython taken by K4ffu just after joining the server.",
+            "file": "iipython.png",
+            "name": "iiPython"
+        },
+        {
+            "description": "Photo of DmmD standing outside the first house with shaders.",
+            "file": "iipython_house_with_dmmd.png",
+            "name": "iiPython's House w/ DmmD"
+        },
+        {
+            "description": "iiPython staring off into the sunset, courtesy of Emy.",
+            "file": "iipython_sunset.png",
+            "name": "iiPython Sunset"
+        },
+        {
+            "description": "Photo of the shulker packing portion of the Iron Farm.",
+            "file": "iron_farm_1.png",
+            "name": "Iron Farm #1"
+        },
+        {
+            "description": "Photo of the killswitch for the Iron Farm.",
+            "file": "iron_farm_2.png",
+            "name": "Iron Farm #2"
+        },
+        {
+            "description": "General overview of the Iron Farm.",
+            "file": "iron_farm_3.png",
+            "name": "Iron Farm #3"
+        },
+        {
+            "description": "The lobby of the nether side of the Iron Farm.",
+            "file": "iron_farm_lobby.png",
+            "name": "Iron Farm Lobby"
+        },
+        {
+            "description": "Photo of K4ffu's cute fox he brought back from the Arctic.",
+            "file": "k4s_fox.png",
+            "name": "K4ffu's Fox"
+        },
+        {
+            "description": "Emy holding her brand new Kirby shield.",
+            "file": "kirby_shield.png",
+            "name": "Kirby Shield"
+        },
+        {
+            "description": "Emy's llamas staring me (iiPython) down. They're still scary.",
+            "file": "llamas.png",
+            "name": "Llamas"
+        },
+        {
+            "description": "Photo of Emy sitting in Mossville.",
+            "file": "mossville.png",
+            "name": "Mossville"
+        },
+        {
+            "description": "Overhead photo of Mossville, as taken by Emy.",
+            "file": "mossville_2.png",
+            "name": "Mossville #2"
+        },
+        {
+            "description": "The first nether portal of the season, connecting the old base to the nether tunnels.",
+            "file": "nether.png",
+            "name": "Nether Portal"
+        },
+        {
+            "description": "Image showcasing the nether highway connecting the Raid Farm and End Portal.",
+            "file": "nether_highway.png",
+            "name": "Nether Highway"
+        },
+        {
+            "description": "Look at all dem' totems. Who needs to explain that?",
+            "file": "no_death_here_folks.png",
+            "name": "No Death Here Folks"
+        },
+        {
+            "description": "Fepi (rockttlol) chillin' in the emyquarium.",
+            "file": "rock_in_emyquarium.png",
+            "name": "Fepi in Emyquarium"
+        },
+        {
+            "description": "Segregation happening while we were constructing the Iron Farm.",
+            "file": "segregation.png",
+            "name": "Segregation"
+        },
+        {
+            "description": "DmmD getting attacked by shulkers while attempting to build the nether portion of the Shulker Farm.",
+            "file": "shulker_chaos.png",
+            "name": "Shulker Chaos"
+        },
+        {
+            "description": "Random skeleton horses we found within the first week.",
+            "file": "skeleton_horse.png",
+            "name": "Skeleton Horses"
+        },
+        {
+            "description": "An attempt at making ender pearl statis chambers, only to realize paper messed them up.",
+            "file": "stasis.png",
+            "name": "Ender Pearl Stasis"
+        },
+        {
+            "description": "iiPython acting like a stripper on some random oak fences.",
+            "file": "stripclub.png",
+            "name": "Stripclub"
+        },
+        {
+            "description": "Spider jockey that got stuck outside our base on day 1.",
+            "file": "stuck_jockey.png",
+            "name": "Stuck Jockey"
+        },
+        {
+            "description": "Close-up of the Spider Jockey that got stuck outside our base.",
+            "file": "stuck_jockey2.png",
+            "name": "Stuck Jockey #2"
+        },
+        {
+            "description": "DmmD, the gunpowder overlord of Season 3.",
+            "file": "the_gunpowder_man.png",
+            "name": "The Gunpowder Man"
+        },
+        {
+            "description": "First completed row of villagers in the Trading Center.",
+            "file": "trading_center.png",
+            "name": "Trading Center"
+        },
+        {
+            "description": "DmmD, Emy, & iiPython vibing at the little pond Emy made outside base.",
+            "file": "vibes_1.png",
+            "name": "Vibes #1"
+        },
+        {
+            "description": "DmmD, Emy, & iiPython vibing at the little pond Emy made outside base.",
+            "file": "vibes_2.png",
+            "name": "Vibes #2"
+        },
+        {
+            "description": "Two stupid villagers gossiping about weather or something.",
+            "file": "village.png",
+            "name": "Village"
+        },
+        {
+            "description": "I swear it doesn't mean what you think it does.",
+            "file": "villager_sex.png",
+            "name": "Villager Sex"
+        },
+        {
+            "description": "DmmD getting the Voluntary Exile achievement after beating up some pillagers.",
+            "file": "voluntary_exile.png",
+            "name": "Voluntary Exile"
+        },
+        {
+            "description": "Random super-smooth wall underneath our base.",
+            "file": "wall.png",
+            "name": "Wall"
+        },
+        {
+            "description": "Showcase image of Season 3, showing the farm, first base, and lake from DmmD's porch.",
+            "file": "welcome_to_geeseville.png",
+            "name": "Welcome to Geeseville"
+        },
+        {
+            "description": "DmmD and iiPython running around like crazy people.",
+            "file": "wild_geese_running.png",
+            "name": "Wild Geese Running"
+        }
+    ],
+    "members": [
+        {
+            "name": "Dm123321_31mD",
+            "uuid": "d9736929-859d-478a-8575-02cc397673d7"
+        },
+        {
+            "name": "iiPython_",
+            "uuid": "8018c39c-3d81-434e-a02d-6e0813340fd6"
+        },
+        {
+            "name": "K4ffu",
+            "uuid": "bf0f7598-e7fe-4e09-b7a2-a1289d907bbd"
+        },
+        {
+            "name": "pwffy",
+            "uuid": "617d0b8a-148f-47c0-b4f4-36dfe1ac79c7"
+        },
+        {
+            "name": "rockttlol",
+            "uuid": "6102acab-975f-42bd-a720-144ca3995585"
+        }
+    ],
+    "mods": [],
+    "name": "Season 3",
+    "plugins": [
+        {
+            "name": "DiscordSRV",
+            "url": "https://www.spigotmc.org/resources/discordsrv.18494/"
+        },
+        {
+            "name": "GSit",
+            "url": "https://www.spigotmc.org/resources/gsit-modern-sit-seat-and-chair-lay-and-crawl-plugin-1-13-x-1-19-x.62325/"
+        },
+        {
+            "name": "RHLeafDecay",
+            "url": "https://www.spigotmc.org/resources/%E2%98%84%EF%B8%8F-rhleafdecay-fast-and-smooth-leaf-decay-1-20-6-1-21-0.83581/"
+        }
+    ],
+    "schema": 1,
+    "time": "2023/02/04 - 2023/06/10",
+    "version": "1.19",
+    "world": "https://cdn.iipython.dev/GC_S3M.7z"
+}

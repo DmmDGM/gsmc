@@ -1,0 +1,194 @@
+{
+    "active": false,
+    "description": "The first proper Geesecraft season",
+    "gallery": [
+        {
+            "description": "DmmD and iiPython chillin' on a bench outside the park (work-in-progress).",
+            "file": "chilling_on_a_bench.png",
+            "name": "Chillin' on a Bench"
+        },
+        {
+            "description": "DmmD looking at a phantom that got stuck in the stables.",
+            "file": "dmmd_looking_up.png",
+            "name": "DmmD Looking Up"
+        },
+        {
+            "description": "Photo showing the overview of the work-in-progress Geesetown project.",
+            "file": "geese_town.png",
+            "name": "Geese Town"
+        },
+        {
+            "description": "Random ass horse that shoved its head in a troph.",
+            "file": "horse_eating.png",
+            "name": "Horse Eating"
+        },
+        {
+            "description": "Photo partially showing Ice-Boat\u2122\ufe0f, the funnest game in Minecraft.",
+            "file": "ice_boat.png",
+            "name": "Ice Boat"
+        },
+        {
+            "description": "Photo of iiPython tabbed out at the new Geese park.",
+            "file": "iipython_at_park.png",
+            "name": "iiPython at Park"
+        },
+        {
+            "description": "Second photo of iiPython at Geese park (but not tabbed out this time).",
+            "file": "iipython_at_park2.png",
+            "name": "iiPython at Park #2"
+        },
+        {
+            "description": "iiPython checking out the new Geese stables, made by DmmD.",
+            "file": "iipython_near_stable.png",
+            "name": "iiPython Near Stable"
+        },
+        {
+            "description": "Random iron golem we spawned and then held in captivity forever.",
+            "file": "leashed_iron_golem.png",
+            "name": "Leashed Iron Golem"
+        },
+        {
+            "description": "Showcase of the storage system for the 3rd XP Farm of the Season.",
+            "file": "mob_tower.png",
+            "name": "Mob Tower"
+        },
+        {
+            "description": "General photo of the Geese park DmmD designed.",
+            "file": "park.png",
+            "name": "Geese Park"
+        },
+        {
+            "description": "Second general photo of the Geese park.",
+            "file": "park2.png",
+            "name": "Geese Park #2"
+        },
+        {
+            "description": "Another photo of Geese park, this time highlighting iiPython's tree.",
+            "file": "park3.png",
+            "name": "Geese Park #3"
+        },
+        {
+            "description": "iiPython's Tree inside Geese Park, this time with shaders.",
+            "file": "park4.png",
+            "name": "Geese Park #4"
+        },
+        {
+            "description": "Photo of the stables and street layout of Geese Park.",
+            "file": "park5.png",
+            "name": "Geese Park #5"
+        },
+        {
+            "description": "Photo of the water fountain in the middle of Geese Park.",
+            "file": "park6.png",
+            "name": "Geese Park #6"
+        },
+        {
+            "description": "Another photo of the Geese Park water fountain, this time with shaders.",
+            "file": "park7.png",
+            "name": "Geese Park #7"
+        },
+        {
+            "description": "More clear photo of the Stables.",
+            "file": "park8.png",
+            "name": "Geese Park #8"
+        },
+        {
+            "description": "Look at that thing, what is that? Right, it's the beginning of a massive achivement-getting death pillar.",
+            "file": "piller.png",
+            "name": "Death Pillar"
+        },
+        {
+            "description": "Cute little fence we had on the ravine next to base.",
+            "file": "ravine.png",
+            "name": "Ravine"
+        },
+        {
+            "description": "DmmD's foundation for the never finished Goose Shop\u2122\ufe0f.",
+            "file": "shop_foundation.png",
+            "name": "Shop Foundations"
+        },
+        {
+            "description": "DM123321_31MD IS YOU!",
+            "file": "splash.png",
+            "name": "DmmD Splash"
+        },
+        {
+            "description": "Internal view of the Stables DmmD made.",
+            "file": "stable.png",
+            "name": "Stables"
+        },
+        {
+            "description": "The one, the only: Stroke\u2122\ufe0f Energy Drink.",
+            "file": "stroke_energy_drink.png",
+            "name": "Stroke\u2122\ufe0f Energy Drink"
+        },
+        {
+            "description": "Susglass, provided by the Goose Resource Pack.",
+            "file": "susglass.png",
+            "name": "Susglass"
+        },
+        {
+            "description": "Photo of our pretty mid trading center design that we never really used.",
+            "file": "villager_trading_center.png",
+            "name": "Villager Trading Center"
+        },
+        {
+            "description": "Photo of Geesetown (and the Water Fountain) in glorious HD w/ Shaders.",
+            "file": "water_fountain.png",
+            "name": "Water Fountain"
+        },
+        {
+            "description": "Screenshot of the internals of DmmD's valuable shulker (aka \"resources\").",
+            "file": "wealth.png",
+            "name": "DmmD's Resources"
+        },
+        {
+            "description": "WHAT????",
+            "file": "what.png",
+            "name": "WHAT????"
+        },
+        {
+            "description": "Photo of the XP farm actually being used for once.",
+            "file": "xp_farming.png",
+            "name": "XP Farming"
+        }
+    ],
+    "members": [
+        {
+            "name": "Dm123321_31mD",
+            "uuid": "d9736929-859d-478a-8575-02cc397673d7"
+        },
+        {
+            "name": "emiqual",
+            "uuid": "617d0b8a-148f-47c0-b4f4-36dfe1ac79c7"
+        },
+        {
+            "name": "iiErnie",
+            "uuid": "bf0f7598-e7fe-4e09-b7a2-a1289d907bbd"
+        },
+        {
+            "name": "iiPythonx",
+            "uuid": "8018c39c-3d81-434e-a02d-6e0813340fd6"
+        },
+        {
+            "name": "tonyz1111",
+            "uuid": "2fb80ffb-b4e8-46be-86f3-e7eae1a6c38f"
+        }
+    ],
+    "mods": [],
+    "name": "Season 2",
+    "plugins": [
+        {
+            "name": "DiscordSRV",
+            "url": "https://www.spigotmc.org/resources/discordsrv.18494/"
+        },
+        {
+            "name": "GSit",
+            "url": "https://www.spigotmc.org/resources/gsit-modern-sit-seat-and-chair-lay-and-crawl-plugin-1-13-x-1-19-x.62325/"
+        }
+    ],
+    "schema": 1,
+    "time": "2022/06/16 - 2022/09/09",
+    "version": "1.18 - 1.19",
+    "world": null
+}

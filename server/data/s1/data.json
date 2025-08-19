@@ -1,0 +1,131 @@
+{
+    "active": false,
+    "description": "The original Geesecraft season.",
+    "gallery": [
+        {
+            "description": "Lame warning that iiPython put on his storage area.",
+            "file": "ban_hammer.png",
+            "name": "Ban Hammer"
+        },
+        {
+            "description": "DmmD's breeding pattern, a very dumb joke iiPython made.",
+            "file": "breeding_pattern.png",
+            "name": "Breeding Pattern"
+        },
+        {
+            "description": "Bunch of TNT we used to mine for netherite.",
+            "file": "demolitionist.png",
+            "name": "Demolitionist"
+        },
+        {
+            "description": "All of DmmD's organized shulkers inside his EChest.",
+            "file": "dmmd_shulkers.png",
+            "name": "DmmD's Shulkers"
+        },
+        {
+            "description": "Photo of the first diamonds of the Season, once again claimed by DmmD.",
+            "file": "first_diamond.png",
+            "name": "First Diamonds"
+        },
+        {
+            "description": "Cute friendship between a Creeper and a Skeleton :3",
+            "file": "friendship.png",
+            "name": "Friendship <3"
+        },
+        {
+            "description": "Photo of the aftermath of DmmD and iiPython getting absolutely destroyed by a raid.",
+            "file": "hero_of_the_village.png",
+            "name": "Hero of the Village"
+        },
+        {
+            "description": "iiPython's very organized shulkers inside his EChest.",
+            "file": "iipython_shulkers.png",
+            "name": "iiPython's Shulkers"
+        },
+        {
+            "description": "Random note iiPython placed on the first spawner we found.",
+            "file": "imagine_spawner.png",
+            "name": "\"imagine spawner\""
+        },
+        {
+            "description": "Spider that had a bit too much to drink.",
+            "file": "invis_spider.png",
+            "name": "Invisible Spider"
+        },
+        {
+            "description": "Paper being Paper and glitching the hell out when we opened a shulker.",
+            "file": "janky_shulker.png",
+            "name": "Janky Shulker"
+        },
+        {
+            "description": "Lightning storm that iiPython totally didn't summon.",
+            "file": "lightning.png",
+            "name": "Lightning"
+        },
+        {
+            "description": "Mountain next to our base that was very fun to ride around with on horseback.",
+            "file": "mountain.png",
+            "name": "Mountain"
+        },
+        {
+            "description": "DmmD's head that I collected from killing him.",
+            "file": "nice_head.png",
+            "name": "DmmD's Head"
+        },
+        {
+            "description": "iiPython's main weapon of the Season, Nightmare.",
+            "file": "nightmare.png",
+            "name": "Nightmare."
+        },
+        {
+            "description": "Another dumb sign iiPython put outside of his house.",
+            "file": "no_trespassing.png",
+            "name": "No Trespassing"
+        },
+        {
+            "description": "Photo of the Geese park at night.",
+            "file": "park_at_night.png",
+            "name": "Park at Night"
+        },
+        {
+            "description": "The second spawner we ever found on the server.",
+            "file": "spawner.png",
+            "name": "Spawner"
+        },
+        {
+            "description": "DmmD's head, a note block, and an arrow. What more could you ask more?",
+            "file": "turtle_dmmd.png",
+            "name": "Turtle DmmD"
+        }
+    ],
+    "members": [
+        {
+            "name": "Dm123321_31mD",
+            "uuid": "d9736929-859d-478a-8575-02cc397673d7"
+        },
+        {
+            "name": "emiqual",
+            "uuid": "617d0b8a-148f-47c0-b4f4-36dfe1ac79c7"
+        },
+        {
+            "name": "iiPython_",
+            "uuid": "8018c39c-3d81-434e-a02d-6e0813340fd6"
+        }
+    ],
+    "mods": [],
+    "name": "Season 1",
+    "plugins": [
+        {
+            "name": "EssentialsX",
+            "url": "https://essentialsx.net/"
+        },
+        {
+            "name": "GSit",
+            "url": "https://www.spigotmc.org/resources/gsit-modern-sit-seat-and-chair-lay-and-crawl-plugin-1-13-x-1-19-x.62325/"
+        }
+    ],
+    "schema": 1,
+    "time": "2021/05/17 - 2021/09/15",
+    "version": "1.16 - 1.17",
+    "world": null
+}
