@@ -1,0 +1,17 @@
+{
+    "dependencies": {
+        "preact": "^10.26.9",
+        "preact-iso": "^2.9.2"
+    },
+    "devDependencies": {
+        "@preact/preset-vite": "^2.10.2",
+        "vite": "^7.0.4"
+    },
+    "private": true,
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "preview": "vite preview"
+    },
+    "type": "module"
+}

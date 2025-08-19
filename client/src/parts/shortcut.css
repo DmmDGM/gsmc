@@ -1,0 +1,14 @@
+/* Shortcut */
+.shortcut {
+    opacity: 50%;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 75%;
+    }
+
+    &.active {
+        opacity: 100%;
+    }
+}

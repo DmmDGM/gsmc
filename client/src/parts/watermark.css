@@ -1,0 +1,8 @@
+/* Watermark */
+.watermark {
+    color: var(--sd-mono-500);
+    display: flex;
+    font-size: 10px;
+    line-height: 15px;
+    justify-content: center;
+}

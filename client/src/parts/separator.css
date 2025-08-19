@@ -1,0 +1,15 @@
+/* Separator */
+.separator {
+    display: flex;
+    gap: 0px 30px;
+    justify-content: center;
+    
+    & img {
+        height: 20px;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(125%);
+        }
+    }
+}

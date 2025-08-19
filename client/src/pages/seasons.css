@@ -1,0 +1,30 @@
+/* Seasons */
+#seasons {
+    display: flex;
+    padding: 50px 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px 25px;
+
+    & .season {
+        display: flex;
+        aspect-ratio: 8 / 9;
+        width: 25%;
+        flex-direction: column;
+        background-color: var(--sd-mono-200);
+        opacity: 50%;
+        transition: opacity 0.2s ease;
+        padding: 15px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 100%;
+        }
+
+        & img {
+            height: 50%;
+            object-fit: cover;
+        }
+    }
+}

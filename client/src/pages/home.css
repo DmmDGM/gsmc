@@ -1,0 +1,126 @@
+/* Home */
+#home {
+    & .banner {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0px;
+        padding: 50px 50px;
+    
+        & .title {
+            font-size: 50px;
+            line-height: 55px;
+        }
+    
+        & .subtitle {
+            font-weight: normal;
+        }
+    
+        & .featured {
+            display: flex;
+            justify-content: space-around;
+    
+            & img {
+                width: 30%;
+            }
+        }
+    }
+
+    & .cwil {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 25px 0px;
+        padding: 50px 50px;
+
+        & .title {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+
+    & .timer {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 25px 0px;
+        padding: 50px 50px;
+
+        & .title {
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        & .clock {
+            font-size: 40px;
+            line-height: 45px;
+        }
+    }
+
+    & .legacy {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 50px;
+        gap: 50px 0px;
+
+        & .milestone {
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            
+            & img {
+                width: 40%;
+            }
+
+            & .text {
+                display: flex;
+                flex-direction: column;
+                gap: 15px 0px;
+                width: 40%;
+
+                & .title {
+                    text-align: center;
+                }
+
+                & .description {
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+    & .invite {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 25px 0px;
+        padding: 50px 50px;
+
+        & h3 {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+
+    & .motto {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 25px 0px;
+        padding: 50px 50px;
+
+        & .title {
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        & .highlights {
+            display: flex;
+            justify-content: space-around;
+
+            & img {
+                width: 30%;
+            }
+        }
+    }
+}
