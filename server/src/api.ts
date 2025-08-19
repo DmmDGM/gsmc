@@ -4,12 +4,12 @@ import sharp from "sharp";
 
 // Defines archives
 const archives = {
-    "s1": await import("../archives/s1/archive.json"),
-    "s2": await import("../archives/s2/archive.json"),
-    "s3": await import("../archives/s3/archive.json"),
-    "s4": await import("../archives/s4/archive.json"),
-    "s5": await import("../archives/s5/archive.json"),
-    "cwil": await import("../archives/cwil/archive.json")
+    "s1": (await import("../archives/s1/archive.json")).default,
+    "s2": (await import("../archives/s2/archive.json")).default,
+    "s3": (await import("../archives/s3/archive.json")).default,
+    "s4": (await import("../archives/s4/archive.json")).default,
+    "s5": (await import("../archives/s5/archive.json")).default,
+    "cwil": (await import("../archives/cwil/archive.json")).default
 } as Record<string, Archive>;
 
 // Defines api
@@ -27,6 +27,7 @@ export const api = new Elysia({ prefix: "/api" })
         switch(archive.schema) {
             case 1: {
                 try {
+                    // Renders image
                     const path = `./archives/${season}/gallery/${image}`;
                     const file = sharp(path);
                     const { format, width } = await file.metadata();
@@ -89,3 +90,6 @@ export const api = new Elysia({ prefix: "/api" })
             scale: t.Optional(t.Number())
         })
     });
+
+// Defines api type
+export type API = typeof api;

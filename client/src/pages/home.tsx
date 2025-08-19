@@ -78,6 +78,12 @@ export function Home() {
                 </div>
             </div>
             <Separator/>
+            <div class="timer">
+                <h3 class="title">Time Until Season Starts</h3>
+                <h4 class="clock">{ calculateTime(+targetTime - +sourceTime) }</h4>
+                <h4 class="subtitle">September 1st, 2025 - June 1st, 2029</h4>
+            </div>
+            <Separator/>
             <div class="cwil">
                 <h3 class="title">Geesecraft: College While It Lasts (CWIL)</h3>
                 <p>
@@ -102,12 +108,6 @@ export function Home() {
                 <p>
                     Or scroll down to learn about how to join!
                 </p>
-            </div>
-            <Separator/>
-            <div class="timer">
-                <h3 class="title">Time Until Season Starts</h3>
-                <h4 class="clock">{ calculateTime(+targetTime - +sourceTime) }</h4>
-                <h4 class="subtitle">September 1st, 2025 - June 1st, 2029</h4>
             </div>
             <Separator/>
             <div class="legacy">

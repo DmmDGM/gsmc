@@ -1,3 +1,15 @@
 {
-    "schema": 2
+    "description": "Geesecraft: College Edition™.",
+    "gallery": [],
+    "length": {
+        "begin": null,
+        "end": null
+    },
+    "members": [],
+    "mods": [],
+    "name": "CWIL",
+    "plugins": [],
+    "schema": 2,
+    "version": "1.21",
+    "world": null
 }

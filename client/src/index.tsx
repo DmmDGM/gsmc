@@ -9,6 +9,7 @@ import { Shortcut } from "./parts/shortcut";
 import { Watermark } from "./parts/watermark";
 import "./soda.css";
 import "./app.css";
+import { Season } from "./pages/season";
 
 // Defines app
 export function App() {
@@ -29,10 +30,10 @@ export function App() {
 				<Router>
 					<Route path="/home" component={Home} />
 					<Route path="/seasons" component={Seasons} />
-					<Route path="/seasons/:season" component={Seasons} />
-					<Route path="/community" component={Seasons} />
-					<Route path="/privacy" component={Seasons} />
-					<Route path="/extra" component={Seasons} />
+					<Route path="/seasons/:season" component={Season} />
+					<Route path="/community" component={Season} />
+					<Route path="/privacy" component={Season} />
+					<Route path="/extra" component={Season} />
 					<Route default component={Failure} />
 				</Router>
 			</main>
