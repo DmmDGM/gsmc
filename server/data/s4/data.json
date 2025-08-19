@@ -1,0 +1,204 @@
+{
+    "active": false,
+    "description": "Geesecraft Season 4: Modded Mess",
+    "gallery": [
+        {
+            "description": "Screenshot of over 4 stacks of carbon plates, the stupidest thing to craft in Tech Reborn.",
+            "file": "absolutely_balling.png",
+            "name": "Absolutely Ballin'"
+        },
+        {
+            "description": "The basement of iiPython's house during the Ad Astra segment of the season.",
+            "file": "base_of_operations.png",
+            "name": "Base of Operations"
+        },
+        {
+            "description": "Found an illegal inside the tech basement.",
+            "file": "black_dmmd.png",
+            "name": "Black DmmD"
+        },
+        {
+            "description": "An entire double chest filled with lapotron crystals (expensive asf).",
+            "file": "couple_crystals.png",
+            "name": "Couple Crystals"
+        },
+        {
+            "description": "iiPython escaping from Venus after getting trapped without a launchpad, and then making one using scavenged parts from a structure.",
+            "file": "escaping_from_venus.png",
+            "name": "Escaping From Venus"
+        },
+        {
+            "description": "Both of our main Ad Astra rockets during the Goose space race.",
+            "file": "goose_rockets.png",
+            "name": "Goose Rockets"
+        },
+        {
+            "description": "The space suits we used to go to the Moon in Ad Astra. Netherite wasn't cheap so we only had one.",
+            "file": "goose_space_suits.png",
+            "name": "Goose Space Suits"
+        },
+        {
+            "description": "102,000+ pieces of UU-Matter stored inside of our ME storage system.",
+            "file": "inf_uu_matter_lmao.png",
+            "name": "Infinite UU-Matter"
+        },
+        {
+            "description": "16+ stacks of coal ore used to craft carbon plates.",
+            "file": "look_at_all_that_coal.png",
+            "name": "Look at All That Coal"
+        },
+        {
+            "description": "Photo of K4ffu suffocating on the Moon surface.",
+            "file": "looking_chilly.png",
+            "name": "Looking Chilly"
+        },
+        {
+            "description": "DmmD attempting to build an interdimensional ME gateway on the old Moon (Agape Space).",
+            "file": "moon_base_v1.png",
+            "name": "Moon Base v1"
+        },
+        {
+            "description": "Random photo of a Nuke we set off a few hundred blocks away from base.",
+            "file": "nuke.png",
+            "name": "Nuke"
+        },
+        {
+            "description": "Looking down at all those poor pillagers while floating on my jetpack.",
+            "file": "pillagers.png",
+            "name": "Pillagers"
+        },
+        {
+            "description": "DmmD and iiPython heading to the Ad Astra Moon for the first time in our dual rockets.",
+            "file": "race_to_space.png",
+            "name": "Race to Space"
+        },
+        {
+            "description": "Photo of DmmD wearing a Tech Reborn quantum suit, and looking quite silly while doing so.",
+            "file": "silly_dmmd.png",
+            "name": "Silly DmmD"
+        },
+        {
+            "description": "iiPython's primary weapon for Season 4, a Nanosaber with Sharpness 5.",
+            "file": "skill_issue.png",
+            "name": "Skill Issue?"
+        },
+        {
+            "description": "Photo of all the dropped dirt items from DmmD and iiPython excavating to create a Bad Omen farm.",
+            "file": "thats_a_lot_of_dirt.png",
+            "name": "That's a Lot of Dirt"
+        },
+        {
+            "description": "Bunch of cake that iiPython had to buy in order to level up villagers.",
+            "file": "trading_in_2023.png",
+            "name": "Trading in 2023"
+        },
+        {
+            "description": "Photo #1 of the UU-Matter factory, showing off the overall structure.",
+            "file": "uu_factory_1.png",
+            "name": "UU Factory #1"
+        },
+        {
+            "description": "Photo #2 of the UU-Matter factory, showing off the cobblestone generator.",
+            "file": "uu_factory_2.png",
+            "name": "UU Factory #2"
+        },
+        {
+            "description": "Photo #3 of the UU-Matter factory, showing off the automatic crafting system for cobblestone slabs.",
+            "file": "uu_factory_3.png",
+            "name": "UU Factory #3"
+        },
+        {
+            "description": "Photo of captions from the Geese resource pack.",
+            "file": "wandering_scammer.png",
+            "name": "Wandering Scammer"
+        },
+        {
+            "description": "Selfie of DmmD and iiPython in the original tech basement (after Ad Astra).",
+            "file": "weird_selfie.png",
+            "name": "Weird Selfie"
+        }
+    ],
+    "members": [
+        {
+            "name": "DmmDGaming",
+            "uuid": "d9736929-859d-478a-8575-02cc397673d7"
+        },
+        {
+            "name": "Ernesto",
+            "uuid": "bf0f7598-e7fe-4e09-b7a2-a1289d907bbd"
+        },
+        {
+            "name": "iiPythonx",
+            "uuid": "8018c39c-3d81-434e-a02d-6e0813340fd6"
+        },
+        {
+            "name": "pwffy",
+            "uuid": "617d0b8a-148f-47c0-b4f4-36dfe1ac79c7"
+        },
+        {
+            "name": "RomeoWasAsleep",
+            "uuid": "271f1987-57dc-4550-b7ad-a1b1c4bb1a7c"
+        }
+    ],
+    "mods": [
+        {
+            "name": "Ad Astra",
+            "url": "https://modrinth.com/mod/ad-astra"
+        },
+        {
+            "name": "Adorn",
+            "url": "https://modrinth.com/mod/adorn"
+        },
+        {
+            "name": "Agape Space",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/moon-and-space-dimensions-fabric"
+        },
+        {
+            "name": "Applied Energistics 2",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2"
+        },
+        {
+            "name": "Chunkloaders",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/chunk-loaders/files"
+        },
+        {
+            "name": "Croptopia",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/croptopia"
+        },
+        {
+            "name": "Iron Jetpacks",
+            "url": "https://modrinth.com/mod/iron-jetpacks"
+        },
+        {
+            "name": "Not Just Biomes",
+            "url": "https://modrinth.com/mod/not-just-biomes"
+        },
+        {
+            "name": "SimpleDiscordLink",
+            "url": "https://modrinth.com/mod/sdlink"
+        },
+        {
+            "name": "Tech Reborn",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/techreborn"
+        },
+        {
+            "name": "UU-Extended",
+            "url": "https://modrinth.com/mod/uu-extended"
+        },
+        {
+            "name": "WTHIT",
+            "url": "https://modrinth.com/mod/wthit"
+        }
+    ],
+    "name": "Season 4",
+    "plugins": [
+        {
+            "name": "BlueMap",
+            "url": "https://modrinth.com/plugin/bluemap"
+        }
+    ],
+    "schema": 1,
+    "time": "2023/06/27 - 2023/09/21",
+    "version": "1.20.1",
+    "world": "https://cdn.iipython.dev/GC_S4M.7z"
+}
