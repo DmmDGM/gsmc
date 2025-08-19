@@ -1,0 +1,266 @@
+{
+    "active": false,
+    "description": "The next generation Geesecraft season.",
+    "gallery": [
+        {
+            "description": "Nothing more American then carrying 6 buckets of oil in your backpack.",
+            "file": "america.png",
+            "name": "Lots of Oil"
+        },
+        {
+            "description": "A single bee just vibing in the bee dimension.",
+            "file": "bee_dimension.png",
+            "name": "Bee Dimension"
+        },
+        {
+            "description": "Beebert the Bee lokey chillin'.",
+            "file": "beebert.png",
+            "name": "Beebert"
+        },
+        {
+            "description": "DmmD in a cage from Mine Cells.",
+            "file": "caged_dmmd.png",
+            "name": "Caged DmmD"
+        },
+        {
+            "description": "DmmD's grave surrounded by pissed off bees in the bee dimension.",
+            "file": "dmmd_grave_bee_dimension.png",
+            "name": "DmmD's Grave"
+        },
+        {
+            "description": "The dragon egg, in the wrong hands.",
+            "file": "drag_on_deez_nuts.png",
+            "name": "Dragon Egg"
+        },
+        {
+            "description": "First diamond in Season 5 of Geesecraft (or at least DmmD thinks it is).",
+            "file": "fake_first_diamond.png",
+            "name": "First Diamond"
+        },
+        {
+            "description": "iiPython with \"a couple of arrows\" inside of his body.",
+            "file": "iipython_couple_arrows.png",
+            "name": "Couple of Arrows"
+        },
+        {
+            "description": "A full Ad Astra jet suit ready for launch.",
+            "file": "jet_suit.png",
+            "name": "Jet Suit"
+        },
+        {
+            "description": "K4ffu on the moon.",
+            "file": "k4_on_the_moon.png",
+            "name": "K4 on the Moon"
+        },
+        {
+            "description": "K4ffu's Base on day 3 (no way im playing this time, epico!).",
+            "file": "k4s_base.png",
+            "name": "K4's Base"
+        },
+        {
+            "description": "Second photo of the DmmD-iiPython base exterior.",
+            "file": "main_base_exterior_2.png",
+            "name": "Main Base Exterior (2)"
+        },
+        {
+            "description": "Photo of the DmmD-iiPython base exterior, with the dome centered.",
+            "file": "main_base_exterior.png",
+            "name": "Main Base Exterior"
+        },
+        {
+            "description": "The interior of the main base, highlighting our nice furniture (not pictured: Tech Reborn machines).",
+            "file": "main_base_interior.png",
+            "name": "Main Base Interior"
+        },
+        {
+            "description": "The main base DmmD and iiPython use.",
+            "file": "main_base.png",
+            "name": "Main Base (old)"
+        },
+        {
+            "description": "Second photo of our main basement, with our multiblock Tech Reborn machines.",
+            "file": "main_basement_2.png",
+            "name": "Basement (2)"
+        },
+        {
+            "description": "The main basement, featuring a Mine Cells gateway and our multiblock machines.",
+            "file": "main_basement.png",
+            "name": "Basement"
+        },
+        {
+            "description": "The best tier rocket available in Ad Astra, made out of ostrum.",
+            "file": "max_tier_rocket.png",
+            "name": "Max Tier Rocket"
+        },
+        {
+            "description": "K4ffu's villager with mending.",
+            "file": "mending_villager.png",
+            "name": "Mending Villager"
+        },
+        {
+            "description": "A fully charged netherite jetpack, with a casual 64 million E capacity.",
+            "file": "netherite_jetpack.png",
+            "name": "Netherite Jetpack"
+        },
+        {
+            "description": "Photo of our netherite mine, which wiped out nearly everything on y=15.",
+            "file": "netherite_mine.png",
+            "name": "Netherite Mine"
+        },
+        {
+            "description": "Screenshot of one chest full of Lapotron crystals (65 in total, both chests), expensive as hell.",
+            "file": "rich_as_fuck.png",
+            "name": "Lapotron Crystals"
+        },
+        {
+            "description": "First Tier 2 rocket of the Season, with K4ffu standing next to it.",
+            "file": "t2_rocket.png",
+            "name": "Tier 2 Rocket"
+        },
+        {
+            "description": "Just a bit of netherite materials, extracted from our mine.",
+            "file": "tad_of_netherite.png",
+            "name": "Tad of Netherite"
+        },
+        {
+            "description": "Tinkers' Construct with molten iron filling to the brim of the container.",
+            "file": "tc_molten_iron.png",
+            "name": "Molten Iron"
+        },
+        {
+            "description": "The massive smeltery in DmmD and iiPython's basement (for Tinkers' Construct).",
+            "file": "tinker_furnace.png",
+            "name": "Tinker Smeltery"
+        },
+        {
+            "description": "A warden trying to wipe out iiPython, meanwhile I had a jetpack.",
+            "file": "warden.png",
+            "name": "Warden"
+        },
+        {
+            "description": "Weird structure found in cave.",
+            "file": "weird_cave_structure.png",
+            "name": "Weird Cave Structure"
+        },
+        {
+            "description": "K4ffu's Zombie Villager (he fell for the oldest trick in the book).",
+            "file": "zombie_villager.png",
+            "name": "Zombie Villager"
+        }
+    ],
+    "members": [
+        {
+            "name": "DmmDGaming",
+            "uuid": "d9736929-859d-478a-8575-02cc397673d7"
+        },
+        {
+            "name": "ernistus",
+            "uuid": "bf0f7598-e7fe-4e09-b7a2-a1289d907bbd"
+        },
+        {
+            "name": "eunyung",
+            "uuid": "617d0b8a-148f-47c0-b4f4-36dfe1ac79c7"
+        },
+        {
+            "name": "iiPythonx",
+            "uuid": "8018c39c-3d81-434e-a02d-6e0813340fd6"
+        },
+        {
+            "name": "LittleHebo",
+            "uuid": "a695d266-e3fe-4931-a961-0d8eafc0385d"
+        }
+    ],
+    "mods": [
+        {
+            "name": "Ad Astra",
+            "url": "https://modrinth.com/mod/ad-astra"
+        },
+        {
+            "name": "Ad-Astra: Giselle Addon",
+            "url": "https://modrinth.com/mod/ad-astra-giselle-addon"
+        },
+        {
+            "name": "Applied Energistics 2",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2"
+        },
+        {
+            "name": "Cat Jam",
+            "url": "https://modrinth.com/mod/cat_jam"
+        },
+        {
+            "name": "Chunkloaders",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/chunk-loaders/files"
+        },
+        {
+            "name": "Cobblemon",
+            "url": "https://modrinth.com/mod/cobblemon"
+        },
+        {
+            "name": "Croptopia",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/croptopia"
+        },
+        {
+            "name": "Hephaestus",
+            "url": "https://modrinth.com/mod/hephaestus"
+        },
+        {
+            "name": "Iron Jetpacks",
+            "url": "https://modrinth.com/mod/iron-jetpacks"
+        },
+        {
+            "name": "Leaves Be Gone",
+            "url": "https://modrinth.com/mod/leaves-be-gone"
+        },
+        {
+            "name": "Megane",
+            "url": "https://modrinth.com/mod/megane"
+        },
+        {
+            "name": "Mine Cells",
+            "url": "https://modrinth.com/mod/minecells"
+        },
+        {
+            "name": "Paladin's Furniture",
+            "url": "https://modrinth.com/mod/paladins-furniture"
+        },
+        {
+            "name": "Sculk Depths",
+            "url": "https://modrinth.com/mod/sculk-depths"
+        },
+        {
+            "name": "Tech Reborn",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/techreborn"
+        },
+        {
+            "name": "The Bumblezone",
+            "url": "https://modrinth.com/mod/the-bumblezone-fabric"
+        },
+        {
+            "name": "Traveler's Backpack",
+            "url": "https://www.curseforge.com/minecraft/mc-mods/travelers-backpack-fabric"
+        },
+        {
+            "name": "UU-Extended",
+            "url": "https://modrinth.com/mod/uu-extended"
+        },
+        {
+            "name": "WTHIT",
+            "url": "https://modrinth.com/mod/wthit"
+        },
+        {
+            "name": "You're In Grave Danger",
+            "url": "https://modrinth.com/mod/yigd"
+        }
+    ],
+    "name": "Season 5",
+    "plugins": [
+        {
+            "name": "Discord Integration",
+            "url": "https://modrinth.com/plugin/dcintegration"
+        }
+    ],
+    "schema": 1,
+    "time": "2024/06/27 - 2024/08/30",
+    "version": "1.20.1",
+    "world": "https://cdn.iipython.dev/GC_S5M.7z"
+}
