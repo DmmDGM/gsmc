@@ -137,6 +137,45 @@
     }
 
     & .gallery {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 50px 0px;
         padding: 50px 50px;
+        
+        & h3 {
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        & div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 25px 25px;
+
+            & .image {
+                padding: 10px 25px;
+                background: var(--sd-mono-200);
+                border: none;
+                border-radius: 5px;
+                width: 30%;
+                opacity: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 5px 0px;
+                transition: opacity 0.2s ease;
+
+                &:hover {
+                    opacity: 100%;
+                }
+
+                & img {
+                    width: 100%;
+                    aspect-ratio: 16/9;
+                    object-fit: contain;
+                }
+            }
+        }
     }
 }

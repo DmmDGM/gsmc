@@ -1,7 +1,7 @@
 // Imports
 import Elysia, { t } from "elysia";
-import { loadArchive } from "./archive";
-import { loadImage } from "./gallery";
+import { loadArchive } from "../tools/archive";
+import { loadImage } from "../tools/gallery";
 
 // Defines api
 export const api = new Elysia({ prefix: "/api" })

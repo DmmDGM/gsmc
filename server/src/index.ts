@@ -1,8 +1,8 @@
 // Imports
 import chalk from "chalk";
 import { Elysia } from "elysia";
-import { api } from "./api";
-import { web } from "./web";
+import { api } from "./routes/api";
+import { web } from "./routes/web";
 
 // Creates app
 const port = Number(process.env.PORT);

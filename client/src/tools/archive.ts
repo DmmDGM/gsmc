@@ -1,5 +1,3 @@
-
-
 // Defines loader
 export async function loadArchive(season: string): Promise<Archive> {
     // Loads archive
@@ -10,32 +8,7 @@ export async function loadArchive(season: string): Promise<Archive> {
 }
 
 // Defines parser
-export function parseArchive(archive: Archive): {
-    activity: string;
-    description: string;
-    gallery: {
-        description: string;
-        file: string;
-        name: string;
-        time: string | null;
-    }[];
-    length: string;
-    members: {
-        name: string;
-        uuid: string;
-    }[];
-    mods: {
-        name: string;
-        url: string;
-    }[];
-    name: string;
-    plugins: {
-        name: string;
-        url: string;
-    }[];
-    version: string;
-    world: string | null;
-} {
+export function parseArchive(archive: Archive): Catalog {
     // Parses archive
     switch(archive.schema) {
         case 1: {

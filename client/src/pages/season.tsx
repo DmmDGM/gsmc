@@ -1,12 +1,12 @@
 // Imports
 import { useRoute } from "preact-iso";
 import { useEffect, useState } from "preact/hooks";
-import { loadArchive, parseArchive } from "../archive";
-import { contexts } from "../contexts";
+import { contexts } from "../tools/contexts";
 import { Divider } from "../parts/divider";
 import { Separator } from "../parts/separator";
 import { Shortcut } from "../parts/shortcut";
-import { loadImage } from "../gallery";
+import { loadArchive, parseArchive } from "../tools/archive";
+import { loadImage } from "../tools/gallery";
 import "./season.css";
 
 // Defines member
@@ -53,28 +53,39 @@ function Mod({ name, url }) {
 }
 
 // Defines image
-function Image({ season, file, name, description, time }) {
+function Image({ season, file, name, description, time, modal }) {
     // Creates image
     return (
-        <img src={ loadImage(season, file) } alt={ file }/>
+        <button class="image" onClick={ () => modal({ season, file, name, description, time }) }>
+            <img src={ loadImage(season, file, 50, 50) } alt={ file }/>
+            <div>{ name }</div>
+            <div>({ file })</div>
+        </button>
     );
 }
 
 // Defines season
 export function Season() {
     // Creates states
-    const [ name, setName ] = useState("");
-    const [ description, setDescription ] = useState("");
-    const [ length, setLength ] = useState("");
-    const [ version, setVersion ] = useState("");
-    const [ activity, setActivity ] = useState("");
-    const [ world, setWorld ] = useState(null);
-    const [ members, setMembers ] = useState([]);
-    const [ plugins, setPlugins ] = useState([]);
-    const [ mods, setMods ] = useState([]);
-    const [ gallery, setGallery ] = useState([]);
-    const [ banner, setBanner ] = useState(<></>);
-    const [ content, setContent ] = useState(<></>);
+    const [ catalog, setCatalog ] = useState<Catalog>({
+        activity: "",
+        description: "",
+        gallery: [],
+        length: "",
+        members: [],
+        mods: [],
+        name: "",
+        plugins: [],
+        version: "",
+        world: null
+    });
+    const [ context, setContext ] = useState<Context>({
+        banner: {
+            alt: "",
+            src: ""
+        },
+        content: <></>
+    });
 
     // Parses archive
     const { params: { season } } = useRoute();
@@ -83,18 +94,8 @@ export function Season() {
             .then((archive) => parseArchive(archive))
             .then((catalog) => {
                 const context = contexts[season];
-                setName(catalog.name);
-                setDescription(catalog.description);
-                setLength(catalog.length);
-                setVersion(catalog.version);
-                setActivity(catalog.activity);
-                setMembers(catalog.members);
-                setPlugins(catalog.plugins);
-                setMods(catalog.mods);
-                setGallery(catalog.gallery);
-                setWorld(catalog.world);
-                setBanner(<img class="banner" src={ context.banner.src } alt={ context.banner.alt }/>);
-                setContent(context.content({ catalog }));
+                setCatalog(catalog);
+                setContext(context);
             });
     }, []);
     
@@ -102,26 +103,26 @@ export function Season() {
     return (
         <div id="season">
             <div class="splash">
-                <h1 class="name">{ name }</h1>
-                <h2 class="description">{ description }</h2>
-                { banner }
+                <h1 class="name">{ catalog.name }</h1>
+                <h2 class="description">{ catalog.description }</h2>
+                <img class="banner" src={ context.banner.src } alt={ context.banner.alt }/>
                 <div class="details">
-                    <div>{ length }</div>
+                    <div>{ catalog.length }</div>
                     <span class="star">★</span>
-                    <div>{ version }</div>
+                    <div>{ catalog.version }</div>
                     <span class="star">★</span>
-                    <div>{ activity }</div>
+                    <div>{ catalog.activity }</div>
                     <span class="star">★</span>
                     <div>
-                        { world ? (
-                            <Shortcut href={ world }>Download World</Shortcut>
+                        { catalog.world ? (
+                            <Shortcut href={ catalog.world }>Download World</Shortcut>
                         ) : (
                             <>World Unavailable</>
                         ) }
                     </div>
                 </div>
             </div>
-            <div class="content">{ content }</div>
+            <div class="content">{ context.content }</div>
             <div class="members">
                 <h3>Members</h3>
                 <div>
@@ -157,7 +158,7 @@ export function Season() {
                 <h3>Gallery</h3>
                 <div>
                     {
-                        gallery.length ? gallery.map((image) => (
+                        catalog.gallery.length ? catalog.gallery.map((image) => (
                             <Image
                                 season={ season } file={ image.file } name={ image.name }
                                 description={ image.description } time={ image.time }

@@ -1,7 +1,7 @@
 // Imports
 import { useState } from "preact/hooks";
-import { loadArchive, parseArchive } from "../archive";
-import { contexts } from "../contexts";
+import { loadArchive, parseArchive } from "../tools/archive";
+import { contexts } from "../tools/contexts";
 import "./seasons.css";
 
 // Defines card

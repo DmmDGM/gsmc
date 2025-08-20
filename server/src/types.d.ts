@@ -1,2 +1,2 @@
-// Imports
-import "../../types";
+// Refers types
+/// <reference path="../../types.d.ts" />
