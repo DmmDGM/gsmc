@@ -1,7 +1,8 @@
 // Imports
 import { useState } from "preact/hooks";
-import "./seasons.css";
 import { loadArchive, parseArchive } from "../archive";
+import { contexts } from "../contexts";
+import "./seasons.css";
 
 // Defines card
 function Card({ alt, season, src }) {
@@ -32,14 +33,13 @@ function Card({ alt, season, src }) {
 // Defines seasons
 export function Seasons() {
     // Creates seasons
+    const seasons = [ "cwil", "s5", "s4", "s3", "s2", "s1" ];
+    const children = seasons.map((season) => {
+        const context = contexts[season];
+        const { alt, src } = context.banner;
+        return (<Card src={ src } alt={ alt } season={ season }></Card>);
+    });
     return (
-        <div id="seasons">
-            <Card src="/bread.avif" alt="CWIL Banner" season="cwil"/>
-            <Card src="/main-basement.png" alt="Season 5 Banner" season="s5"/>
-            <Card src="/goose-rockets.png" alt="Season 4 Banner" season="s4"/>
-            <Card src="/iipython-selfie.png" alt="Season 3 Banner" season="s3"/>
-            <Card src="/water-fountain.png" alt="Season 2 Banner" season="s2"/>
-            <Card src="/park-at-night.avif" alt="Season 1 Banner" season="s1"/>
-        </div>
+        <div id="seasons">{ children }</div>
     );
 }

@@ -21,6 +21,7 @@
             justify-content: space-around;
     
             & img {
+                box-shadow: 0px 0px 10px black;
                 width: 30%;
             }
         }
@@ -69,6 +70,7 @@
             justify-content: space-around;
             
             & img {
+                box-shadow: 0px 0px 10px black;
                 width: 40%;
             }
 
@@ -119,6 +121,7 @@
             justify-content: space-around;
 
             & img {
+                box-shadow: 0px 0px 10px black;
                 width: 30%;
             }
         }

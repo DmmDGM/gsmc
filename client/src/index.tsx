@@ -3,13 +3,13 @@ import { render } from "preact";
 import { LocationProvider, Router, Route } from "preact-iso";
 import { Failure } from "./pages/failure";
 import { Home } from "./pages/home";
+import { Season } from "./pages/season";
 import { Seasons } from "./pages/seasons";
 import { Logo } from "./parts/logo";
 import { Shortcut } from "./parts/shortcut";
 import { Watermark } from "./parts/watermark";
 import "./soda.css";
 import "./app.css";
-import { Season } from "./pages/season";
 
 // Defines app
 export function App() {

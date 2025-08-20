@@ -9,6 +9,6 @@ const port = Number(process.env.PORT);
 const app = new Elysia()
     .use(api)
     .use(web)
-    .get("*", () => Bun.file("../client/dist/index.html"))
+    .onError(() => Bun.file("../client/dist/index.html"))
     .listen(port);
 console.log(chalk.cyan(`Server is now listening on ${app.server?.url}.`));

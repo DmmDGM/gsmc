@@ -147,7 +147,7 @@ export function Home() {
             <div class="invite">
                 <h3>Consider Joining?</h3>
                 <p>
-                    Join our <Shortcut href="/discord">Discord Server</Shortcut> and
+                    Join our <Shortcut href="https://discord.gg/HYgcp85g6u">Discord Server</Shortcut> and
                     let us know your username, and we'll add you to our whitelist!
                 </p>
                 <p>

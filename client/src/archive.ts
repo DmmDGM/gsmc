@@ -11,26 +11,69 @@ export async function loadArchive(season: string): Promise<Archive> {
 
 // Defines parser
 export function parseArchive(archive: Archive): {
+    activity: string;
     description: string;
+    gallery: {
+        description: string;
+        file: string;
+        name: string;
+        time: string | null;
+    }[];
+    length: string;
+    members: {
+        name: string;
+        uuid: string;
+    }[];
+    mods: {
+        name: string;
+        url: string;
+    }[];
     name: string;
-    status: string;
+    plugins: {
+        name: string;
+        url: string;
+    }[];
+    version: string;
+    world: string | null;
 } {
     // Parses archive
     switch(archive.schema) {
         case 1: {
             return {
+                activity: archive.active ? "Active" : "Inactive",
                 description: archive.description,
+                gallery: archive.gallery.map((image) => {
+                    return {
+                        description: image.description,
+                        file: image.file,
+                        name: image.name,
+                        time: null
+                    };
+                }),
+                length: archive.time,
+                members: archive.members,
+                mods: archive.mods,
                 name: archive.name,
-                status: `${archive.time} (${archive.active ? "Active" : "Inactive"})`
+                plugins: archive.plugins,
+                version: archive.version,
+                world: archive.world
             };
         }
         case 2: {
             const { begin, end } = archive.length;
-            const activity = begin === null ? "Coming Soon" : end === null ? "Active" : "Inactive";
+            const activity = begin === null ? "Coming Soon" :
+                end === null ? "Active" : "Inactive";
             return {
+                activity: activity,
                 description: archive.description,
+                gallery: archive.gallery,
+                length: `${begin ?? "N/A"} - ${end ?? "N/A"}`,
+                members: archive.members,
+                mods: archive.mods,
                 name: archive.name,
-                status: `${begin ?? "N/A"} - ${end ?? "N/A"} (${activity})`
+                plugins: archive.plugins,
+                version: archive.version,
+                world: archive.world
             };
         }
     }
