@@ -20,7 +20,6 @@ function Member({ name, uuid }) {
         fetch(`https://playerdb.co/api/player/minecraft/${uuid}`)
             .then(async (response) => {
                 const metadata = await response.json();
-                console.log(metadata);
                 setAvatar(metadata.data.player.avatar);
                 setUsername(metadata.data.player.username);
             });
@@ -53,14 +52,30 @@ function Mod({ name, url }) {
 }
 
 // Defines image
-function Image({ season, file, name, description, time, modal }) {
+function Image({ season, image, setModal }) {
     // Creates image
     return (
-        <button class="image" onClick={ () => modal({ season, file, name, description, time }) }>
-            <img src={ loadImage(season, file, 50, 50) } alt={ file }/>
-            <div>{ name }</div>
-            <div>({ file })</div>
+        <button class="image" onClick={ () => setModal({ image, toggle: true }) }>
+            <img src={ loadImage(season, image.file, 50, 50) } alt={ image.file }/>
+            <div>{ image.name }</div>
+            <div>({ image.file })</div>
         </button>
+    );
+}
+
+function Preview({ season, image, setModal }) {
+    // Creates preview
+    const url = loadImage(season, image.file, 100, 100);
+    return (
+        <div class="preview">
+            <img src={ url } alt={ image.file }/>
+            <h3>{ image.name }</h3>
+            <h4>({ image.file })</h4>
+            <p>{ image.description }</p>
+            <p>{ image.time }</p>
+            <a href={ url } target="_blank" rel="noopener noreferrer">Open Raw</a>
+            <button onClick={ () => setModal({ image: image, toggle: false }) }>Close</button>
+        </div>
     );
 }
 
@@ -80,11 +95,23 @@ export function Season() {
         world: null
     });
     const [ context, setContext ] = useState<Context>({
+        Content: () => <></>,
         banner: {
             alt: "",
             src: ""
         },
-        content: <></>
+    });
+    const [ modal, setModal ] = useState<{
+        image: typeof catalog.gallery[number];
+        toggle: boolean;
+    }>({
+        image: {
+            description: "",
+            file: "",
+            name: "",
+            time: ""
+        },
+        toggle: false
     });
 
     // Parses archive
@@ -92,11 +119,8 @@ export function Season() {
     useEffect(() => {
         loadArchive(season)
             .then((archive) => parseArchive(archive))
-            .then((catalog) => {
-                const context = contexts[season];
-                setCatalog(catalog);
-                setContext(context);
-            });
+            .then((catalog) => setCatalog(catalog));
+        setContext(contexts[season]);
     }, []);
     
     // Creates season
@@ -122,11 +146,11 @@ export function Season() {
                     </div>
                 </div>
             </div>
-            <div class="content">{ context.content }</div>
+            <div class="content"><context.Content/></div>
             <div class="members">
                 <h3>Members</h3>
                 <div>
-                    { members.map((member) => (
+                    { catalog.members.map((member) => (
                         <Member name={ member.name } uuid={ member.uuid }/>
                     )) }
                 </div>
@@ -135,7 +159,7 @@ export function Season() {
             <div class="plugins">
                 <h3>Plugins</h3>
                 <div>
-                    { plugins.length ? plugins.map((plugin) => (
+                    { catalog.plugins.length ? catalog.plugins.map((plugin) => (
                         <Plugin name={ plugin.name } url={ plugin.url }/>
                     )) : (
                         <>No Plugins Installed</>
@@ -146,7 +170,7 @@ export function Season() {
             <div class="mods">
                 <h3>Mods</h3>
                 <div>
-                    { mods.length ? mods.map((mod) => (
+                    { catalog.mods.length ? catalog.mods.map((mod) => (
                         <Mod name={ mod.name } url={ mod.url }/>
                     )) : (
                         <>No Mods Installed</>
@@ -159,16 +183,22 @@ export function Season() {
                 <div>
                     {
                         catalog.gallery.length ? catalog.gallery.map((image) => (
-                            <Image
-                                season={ season } file={ image.file } name={ image.name }
-                                description={ image.description } time={ image.time }
-                            />
+                            <Image season={ season } image={ image } setModal={ setModal }/>
                         )) : (
                             <>No Gallery Images</>
                         )
                     }
                 </div>
             </div>
+            {
+                modal.toggle ? (
+                    <div class="modal">
+                        <Preview season={ season } image={ modal.image } setModal={ setModal }/>
+                    </div>
+                ) : (
+                    <></>
+                )
+            }
         </div>
     );
 }

@@ -1,45 +1,45 @@
 // Defines contexts
 export const contexts = {
     "s1": {
+        Content: (await import("../pages/seasons/s1")).S1,
         banner: {
             alt: "Season 1 Banner",
             src: "/park-at-night.avif"
-        },
-        content: (await import("../pages/seasons/s1")).S1
+        }
     },
     "s2": {
+        Content: (await import("../pages/seasons/s2")).S2,
         banner: {
             alt: "Season 2 Banner",
             src: "/water-fountain.png"
-        },
-        content: (await import("../pages/seasons/s2")).S2
+        }
     },
     "s3": {
+        Content: (await import("../pages/seasons/s3")).S3,
         banner: {
             alt: "Season 3 Banner",
             src: "/iipython-selfie.png"
-        },
-        content: (await import("../pages/seasons/s3")).S3
+        }
     },
     "s4": {
+        Content: (await import("../pages/seasons/s4")).S4,
         banner: {
             alt: "Season 4 Banner",
             src: "/goose-rockets.png"
-        },
-        content: (await import("../pages/seasons/s4")).S4
+        }
     },
     "s5": {
+        Content: (await import("../pages/seasons/s5")).S5,
         banner: {
             alt: "Season 5 Banner",
             src: "/main-basement.png"
-        },
-        content: (await import("../pages/seasons/s5")).S5
+        }
     },
     "cwil": {
+        Content: (await import("../pages/seasons/cwil")).CWIL,
         banner: {
             alt: "CWIL Banner",
             src: "/bread.avif"
-        },
-        content: (await import("../pages/seasons/cwil")).CWIL
+        }
     }
 } as Record<string, Context>;

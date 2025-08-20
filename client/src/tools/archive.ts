@@ -20,7 +20,7 @@ export function parseArchive(archive: Archive): Catalog {
                         description: image.description,
                         file: image.file,
                         name: image.name,
-                        time: null
+                        time: ".w."
                     };
                 }),
                 length: archive.time,

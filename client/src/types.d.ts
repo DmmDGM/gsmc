@@ -9,7 +9,7 @@ type Catalog = {
         description: string;
         file: string;
         name: string;
-        time: string | null;
+        time: string;
     }[];
     length: string;
     members: {
@@ -31,9 +31,9 @@ type Catalog = {
 
 // Defines context
 type Context = {
+    Content: () => JSXInternal.Element;
     banner: {
         alt: string;
         src: string;
     };
-    content: JSXInternal.Element
 };
