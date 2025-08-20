@@ -1,7 +1,11 @@
 // Imports
 import { useState } from "preact/hooks";
+
+// Imports tools
 import { loadArchive, parseArchive } from "../tools/archive";
 import { contexts } from "../tools/contexts";
+
+// Imports css
 import "./seasons.css";
 
 // Defines card
@@ -19,15 +23,13 @@ function Card({ alt, season, src }) {
         });
 
     // Creates card
-    return (
-        <a href={ `/seasons/${season}` } class="card">
-            <img src={ src } alt={ alt }/>
-            <div>
-                <h3>{ name }</h3>
-                <p>{ description }</p>
-            </div>
-        </a>
-    )
+    return <a href={ `/seasons/${season}` } class="card">
+        <img src={ src } alt={ alt }/>
+        <div>
+            <h3>{ name }</h3>
+            <p>{ description }</p>
+        </div>
+    </a>;
 }
 
 // Defines seasons
@@ -39,7 +41,5 @@ export function Seasons() {
         const { alt, src } = context.banner;
         return (<Card src={ src } alt={ alt } season={ season }></Card>);
     });
-    return (
-        <div id="seasons">{ children }</div>
-    );
+    return <div id="seasons">{ children }</div>;
 }
