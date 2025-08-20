@@ -55,7 +55,7 @@ export function Home() {
         <div id="banner">
             <h1>Geesecraft</h1>
             <p class="center">A Minecraft Server with <b><u>Actual</u></b> Freedom and Democracy.</p>
-            <div>
+            <div  class="highlights">
                 <img src="/dmmd-sunset.avif" alt="DmmD Staring at the Sunset"/>
                 <img src="/fepis-house.avif" alt="Fepis's House"/>
                 <img src="/iipython-sunset.avif" alt="iiPython Staring at the Sunset"/>
@@ -134,7 +134,7 @@ export function Home() {
         <Crumbs/>
         <div id="motto">
             <h3>For Geese and Glory!</h3>
-            <div>
+            <div class="highlights">
                 <img src="/main-base-interior.png" alt="Season 5 Base"/>
                 <img src="/vibes.png" alt="Pond outside Base"/>
                 <img src="/welcome-to-geeseville.png" alt="Season 3 Porch"/>

@@ -1,43 +1,191 @@
+/* Member */
+.member {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    width: 150px;
+
+    & img {
+        border-radius: 5px;
+        width: 100px;
+    }
+
+    & span {
+        text-align: center;
+    }
+}
+
+/* Plugin and Mod */
+.plugin, & .mod {
+    background-color: var(--sd-mono-200);
+    border-radius: 5px;
+    opacity: 50%;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+& .snapshot {
+    align-items: center;
+    background: var(--sd-mono-200);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0px;
+    opacity: 50%;
+    padding: 10px 25px;
+    transition: opacity 0.2s ease;
+    width: 30%;
+
+    &:hover {
+        opacity: 100%;
+    }
+
+    & img {
+        aspect-ratio: 16 / 9;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    & span {
+        text-align: center;
+
+        &.long {
+            word-break: break-all;
+        }
+    }
+}
+
+/* Preview */
+.preview {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0px;
+    height: 75%;
+    justify-content: center;
+    width: 75%;
+
+    & img {
+        aspect-ratio: 16 / 9;
+        max-height: 50%;
+        max-width: 75%;
+        object-fit: contain;
+    }
+
+    & h3 {
+        text-align: center;
+
+        @media screen and ((max-height: 400px) or (max-width: 500px)) {
+            display: none;
+        }
+    }
+
+    & p {
+        text-align: justify;
+
+        @media screen and ((max-height: 400px) or (max-width: 500px)) {
+            display: none;
+        }
+    }
+
+    & .details {
+        display: flex;
+        gap: 25px 25px;
+
+        & span {
+            text-align: center;
+
+            &.long {
+                word-break: break-all;
+            }
+        }
+
+        @media screen and ((max-height: 500px) or (max-width: 750px)) {
+            display: none;
+        }
+    }
+
+    & a {
+        opacity: 50%;
+        text-align: center;
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 100%;
+        }
+    }
+
+    & button {
+        background-color: var(--sd-mono-200);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 50%;
+        padding: 10px 25px;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 100%;
+        }
+    }
+}
+
 /* Season */
 #season {
-    & .splash {
+    & #splash {
         align-items: center;
         display: flex;
         flex-direction: column;
         gap: 20px 0px;
         padding: 50px 50px;
 
-        & .name {
+        & h1 {
             font-size: 30px;
             line-height: 35px;
+            text-align: center;
         }
     
-        & .description {
-            font-size: 20px;
-            line-height: 25px;
-        }
-    
-        & .details {
-            display: flex;
-            gap: 10px 25px;
-            justify-content: center;
+        & p {
+            text-align: justify;
         }
 
-        & .banner {
+        & img {
             aspect-ratio: 3 / 1;
             box-shadow: 0px 0px 10px black;
             object-fit: cover;
             width: 100%;
         }
+    
+        & .details {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px 50px;
+            justify-content: center;
+
+            & a, & span {
+                text-align: center;
+            }
+        }
     }
 
-    & .content {
+    & #content {
         background-color: var(--sd-mono-200);
         box-shadow: 0px 0px 10px black;
         padding: 50px 50px;
     }
 
-    & .members {
+    & #members, & #plugins, & #mods, & #gallery {
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -47,167 +195,63 @@
         & h3 {
             font-size: 20px;
             line-height: 25px;
+            text-align: center;
         }
+    }
 
-        & div {
+    & #members {
+        & .list {
             display: flex;
             flex-wrap: wrap;
             gap: 50px 50px;
             justify-content: center;
-
-            & .member {
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                gap: 10px 0px;
-                width: 150px;
-
-                & img {
-                    border-radius: 5px;
-                    width: 100px;
-                }
-            }
         }
     }
 
-    & .plugins {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 50px 0px;
-        padding: 50px 50px;
-        
-        & h3 {
-            font-size: 20px;
-            line-height: 25px;
-        }
-
-        & div {
+    & #plugins, & #mods {
+        & .list {
             display: flex;
             flex-wrap: wrap;
             gap: 25px 25px;
             justify-content: center;
-
-            & .plugin {
-                background-color: var(--sd-mono-200);
-                border-radius: 5px;
-                opacity: 50%;
-                padding: 10px 25px;
-                text-decoration: none;
-                transition: opacity 0.2s ease;
-
-                &:hover {
-                    opacity: 100%;
-                }
-            }
         }
     }
 
-    & .mods {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 50px 0px;
-        padding: 50px 50px;
-        
-        & h3 {
-            font-size: 20px;
-            line-height: 25px;
-        }
-
-        & div {
+    & #gallery {
+        & .list {
             display: flex;
             flex-wrap: wrap;
             gap: 25px 25px;
-            justify-content: center;
-
-            & .mod {
-                background-color: var(--sd-mono-200);
-                border-radius: 5px;
-                opacity: 50%;
-                padding: 10px 25px;
-                text-decoration: none;
-                transition: opacity 0.2s ease;
-
-                &:hover {
-                    opacity: 100%;
-                }
-            }
-        }
-    }
-
-    & .gallery {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 50px 0px;
-        padding: 50px 50px;
-        
-        & h3 {
-            font-size: 20px;
-            line-height: 25px;
-        }
-
-        & div {
-            display: flex;
-            flex-wrap: wrap;
             justify-content: space-around;
-            gap: 25px 25px;
 
-            & .image {
-                padding: 10px 25px;
-                background: var(--sd-mono-200);
-                border: none;
-                border-radius: 5px;
-                align-items: center;
-                width: 30%;
-                opacity: 50%;
-                display: flex;
-                flex-direction: column;
-                gap: 5px 0px;
-                transition: opacity 0.2s ease;
-
-                &:hover {
-                    opacity: 100%;
-                }
-
-                & img {
-                    width: 100%;
-                    aspect-ratio: 16/9;
-                    object-fit: contain;
+            @media screen and (max-width: 750px) {
+                .snapshot {
+                    width: 45%;
                 }
             }
-        }
+
+            @media screen and (max-width: 500px) {
+                align-items: center;
+                flex-direction: column;
+
+                .snapshot {
+                    width: 100%;
+                }
+            }
+        }   
     }
 
-    & .modal {
-        position: fixed;
-        top: 0px;
-        left: 0px;
+    & #modal {
+        align-items: center;
         background-color: color-mix(in srgb, black, transparent 10%);
         display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
         flex-direction: column;
         gap: 10px 0px;
+        height: 100vh;
+        justify-content: center;
+        left: 0px;
+        position: fixed;
+        top: 0px;
         width: 100vw;
-
-        .preview {
-            display: flex;
-            border-radius: 5px;
-            flex-direction: column;
-            gap: 10px 0px;
-            align-items: center;
-            justify-content: center;
-            height: 75%;
-            width: 75%;
-
-            & img {
-                height: 50%;
-                aspect-ratio: 16 / 9;
-                object-fit: contain;
-            }
-        }
     }
 }

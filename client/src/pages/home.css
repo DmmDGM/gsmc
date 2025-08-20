@@ -85,7 +85,7 @@
     }
 
     & #banner, & #motto {
-        & div {
+        & .highlights {
             display: flex;
             gap: 50px 50px;
             justify-content: space-around;
