@@ -1,24 +1,21 @@
 // Imports
 import { useState } from "preact/hooks";
 import "./seasons.css";
+import { loadArchive, parseArchive } from "../archive";
 
 // Defines card
 function Card({ alt, season, src }) {
-    // Fetches archive
+    // Creates states
     const [ name, setName ] = useState("");
     const [ description, setDescription ] = useState("");
-    const server = import.meta.env.VITE_SERVER ?? "";
-    fetch(`${server}/api/${season}/archive`).then(async (response) => {
-        const archive: Archive = await response.json();
-        switch(archive.schema) {
-            case 1:
-            case 2: {
-                setName(archive.name);
-                setDescription(archive.description);
-                break;
-            }
-        }
-    });
+    
+    // Renders archive
+    loadArchive(season)
+        .then((archive) => parseArchive(archive))
+        .then((catalog) => {
+            setName(catalog.name);
+            setDescription(catalog.description);
+        });
 
     // Creates card
     return (

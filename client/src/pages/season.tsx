@@ -2,6 +2,7 @@
 import { useRoute } from "preact-iso";
 import { useState } from "preact/hooks";
 import { Separator } from "../parts/separator";
+import { loadArchive, parseArchive } from "../archive";
 
 // Defines contents
 const contents = {
@@ -15,33 +16,22 @@ const contents = {
 
 // Defines season
 export function Season() {
-    // Fetches archive
+    // Creates states
     const [ name, setName ] = useState("");
     const [ description, setDescription ] = useState("");
     const [ status, setStatus ] = useState("");
     const [ content, setContent ] = useState(<></>);
+
+    // Parses archive
     const { params: { season } } = useRoute();
-    const server = import.meta.env.VITE_SERVER ?? "";
-    fetch(`${server}/api/${season}/archive`).then(async (response) => {
-        const archive: Archive = await response.json();
-        switch(archive.schema) {
-            case 1: {
-                setName(archive.name);
-                setDescription(archive.description);
-                setStatus(`${archive.time} (${archive.active ? "Active" : "Inactive"})`);
-                break;
-            }
-            case 2: {
-                setName(archive.name);
-                setDescription(archive.description);
-                const { begin, end } = archive.length;
-                const activity = begin === null ? "Coming Soon" : end === null ? "Active" : "Inactive";
-                setStatus(`${begin ?? "N/A"} - ${end ?? "N/A"} (${activity})`);
-                break;
-            }
-        }
-        if(season in contents) setContent(contents[season]);
-    });
+    loadArchive(season)
+        .then((archive) => parseArchive(archive))
+        .then((catalog) => {
+            setName(catalog.name);
+            setDescription(catalog.description);
+            setStatus(catalog.status);
+            setContent(contents[season]({ catalog }));
+        });
     
     // Creates season
     return (
