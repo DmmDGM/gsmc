@@ -1,5 +1,5 @@
-/* Separator */
-.separator {
+/* Crumbs */
+.separator.crumbs {
     display: flex;
     gap: 0px 30px;
     justify-content: center;
@@ -11,5 +11,24 @@
         &:hover {
             transform: scale(125%);
         }
+    }
+
+    @media screen and (max-width: 500px) {
+        gap: 0px 20px;
+    }
+}
+
+/* Dots */
+.separator.dots {
+    display: flex;
+    gap: 0px 30px;
+    justify-content: center;
+
+    & span {
+        color: var(--sd-mono-200);
+    }
+
+    @media screen and (max-width: 500px) {
+        gap: 0px 20px;
     }
 }

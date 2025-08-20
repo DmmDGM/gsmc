@@ -1,128 +1,107 @@
+/* Clock */
+.clock {
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+
+    @media screen and (max-width: 500px) {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+/* Milestone */
+.milestone {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px 50px;
+    
+    & img {
+        box-shadow: 0px 0px 10px black;
+        width: 40%;
+    }
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px 0px;
+        width: 40%;
+
+        & h3 {
+            text-align: center;
+        }
+
+        & p {
+            text-align: justify;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        flex-direction: column;
+
+        img {
+            width: 75%;
+        }
+
+        div {
+            width: 100%;
+        }
+    }
+}
+
 /* Home */
 #home {
-    & .banner {
+    & #banner, & #timer, & #cwil, & #legacy, & #invite, & #motto {
         align-items: center;
         display: flex;
         flex-direction: column;
-        gap: 30px 0px;
+        gap: 25px 0px;
         padding: 50px 50px;
-    
-        & .title {
+        
+        & h1 {
             font-size: 50px;
             line-height: 55px;
-        }
-    
-        & .subtitle {
-            font-weight: normal;
-        }
-    
-        & .featured {
-            display: flex;
-            justify-content: space-around;
-    
-            & img {
-                box-shadow: 0px 0px 10px black;
-                width: 30%;
+
+            @media screen and (max-width: 500px) {
+                font-size: 30px;
+                line-height: 35px;
             }
         }
-    }
-
-    & .cwil {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 25px 0px;
-        padding: 50px 50px;
-
-        & .title {
-            font-size: 20px;
-            line-height: 25px;
-        }
-    }
-
-    & .timer {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 25px 0px;
-        padding: 50px 50px;
-
-        & .title {
-            font-size: 20px;
-            line-height: 25px;
-        }
-
-        & .clock {
-            font-size: 40px;
-            line-height: 45px;
-        }
-    }
-
-    & .legacy {
-        display: flex;
-        flex-direction: column;
-        padding: 50px 50px;
-        gap: 50px 0px;
-
-        & .milestone {
-            align-items: center;
-            display: flex;
-            justify-content: space-around;
-            
-            & img {
-                box-shadow: 0px 0px 10px black;
-                width: 40%;
-            }
-
-            & .text {
-                display: flex;
-                flex-direction: column;
-                gap: 15px 0px;
-                width: 40%;
-
-                & .title {
-                    text-align: center;
-                }
-
-                & .description {
-                    text-align: justify;
-                }
-            }
-        }
-    }
-
-    & .invite {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 25px 0px;
-        padding: 50px 50px;
 
         & h3 {
             font-size: 20px;
             line-height: 25px;
+            text-align: center;
+        }
+
+        & p {
+            text-align: justify;
+            
+            &.center {
+                text-align: center;
+            }
         }
     }
 
-    & .motto {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 25px 0px;
-        padding: 50px 50px;
-
-        & .title {
-            font-size: 20px;
-            line-height: 25px;
-        }
-
-        & .highlights {
+    & #banner, & #motto {
+        & div {
             display: flex;
+            gap: 50px 50px;
             justify-content: space-around;
-
+    
             & img {
                 box-shadow: 0px 0px 10px black;
                 width: 30%;
+            }
+
+            @media screen and (max-width: 600px) {
+                align-items: center;
+                flex-direction: column;
+
+                & img {
+                    width: 75%;
+                }
             }
         }
     }

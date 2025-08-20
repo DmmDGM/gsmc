@@ -159,6 +159,7 @@
                 background: var(--sd-mono-200);
                 border: none;
                 border-radius: 5px;
+                align-items: center;
                 width: 30%;
                 opacity: 50%;
                 display: flex;

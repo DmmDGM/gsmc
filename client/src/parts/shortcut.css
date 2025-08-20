@@ -1,6 +1,7 @@
 /* Shortcut */
 .shortcut {
     opacity: 50%;
+    text-align: center;
     text-decoration: none;
     transition: opacity 0.2s ease;
 

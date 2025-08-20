@@ -32,7 +32,8 @@ header {
     & nav {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px 50px;
+        gap: 25px 50px;
+        justify-content: center;
     }
 }
 

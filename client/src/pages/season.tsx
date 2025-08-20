@@ -2,8 +2,7 @@
 import { useRoute } from "preact-iso";
 import { useEffect, useState } from "preact/hooks";
 import { contexts } from "../tools/contexts";
-import { Divider } from "../parts/divider";
-import { Separator } from "../parts/separator";
+import { Crumbs, Dots } from "../parts/separator";
 import { Shortcut } from "../parts/shortcut";
 import { loadArchive, parseArchive } from "../tools/archive";
 import { loadImage } from "../tools/gallery";
@@ -155,7 +154,7 @@ export function Season() {
                     )) }
                 </div>
             </div>
-            <Divider/>
+            <Dots/>
             <div class="plugins">
                 <h3>Plugins</h3>
                 <div>
@@ -166,7 +165,7 @@ export function Season() {
                     ) }
                 </div>
             </div>
-            <Divider/>
+            <Dots/>
             <div class="mods">
                 <h3>Mods</h3>
                 <div>
@@ -177,7 +176,7 @@ export function Season() {
                     )}
                 </div>
             </div>
-            <Separator/>
+            <Crumbs/>
             <div class="gallery">
                 <h3>Gallery</h3>
                 <div>
