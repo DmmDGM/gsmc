@@ -76,15 +76,15 @@
 
     & img {
         aspect-ratio: 16 / 9;
-        max-height: 50%;
-        max-width: 75%;
+        height: 50%;
         object-fit: contain;
+        width: 75%;
     }
 
     & h3 {
         text-align: center;
 
-        @media screen and ((max-height: 400px) or (max-width: 500px)) {
+        @media screen and ((max-height: 400px) or (max-width: 300px)) {
             display: none;
         }
     }
@@ -92,13 +92,15 @@
     & p {
         text-align: justify;
 
-        @media screen and ((max-height: 400px) or (max-width: 500px)) {
+        @media screen and ((max-height: 400px) or (max-width: 300px)) {
             display: none;
         }
     }
 
     & .details {
+        justify-content: center;
         display: flex;
+        flex-wrap: wrap;
         gap: 25px 25px;
 
         & span {
@@ -109,7 +111,7 @@
             }
         }
 
-        @media screen and ((max-height: 500px) or (max-width: 750px)) {
+        @media screen and ((max-height: 500px) or (max-width: 500px)) {
             display: none;
         }
     }
