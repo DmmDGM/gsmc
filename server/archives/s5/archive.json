@@ -259,6 +259,7 @@
             "url": "https://modrinth.com/plugin/dcintegration"
         }
     ],
+    "season": "s5",
     "schema": 1,
     "time": "2024/06/27 - 2024/08/30",
     "version": "1.20.1",

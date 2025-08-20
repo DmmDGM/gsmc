@@ -20,6 +20,7 @@ type Archive = {
         name: string;
         url: string;
     }[];
+    season: string;
     schema: 1;
     time: string;
     version: string;
@@ -50,6 +51,7 @@ type Archive = {
         name: string;
         url: string;
     }[];
+    season: string;
     schema: 2;
     version: string;
     world: string | null;

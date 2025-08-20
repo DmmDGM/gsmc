@@ -1,5 +1,6 @@
 // Imports
 import { useEffect, useState } from "preact/hooks";
+import { Divider } from "../parts/divider";
 import { Separator } from "../parts/separator";
 import { Shortcut } from "../parts/shortcut";
 import "./home.css";
@@ -83,7 +84,7 @@ export function Home() {
                 <h4 class="clock">{ calculateTime(+targetTime - +sourceTime) }</h4>
                 <h4 class="subtitle">September 1st, 2025 - June 1st, 2029</h4>
             </div>
-            <Separator/>
+            <Divider/>
             <div class="cwil">
                 <h3 class="title">Geesecraft: College While It Lasts (CWIL)</h3>
                 <p>

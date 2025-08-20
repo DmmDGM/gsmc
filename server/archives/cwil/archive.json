@@ -9,6 +9,7 @@
     "mods": [],
     "name": "CWIL",
     "plugins": [],
+    "season": "cwil",
     "schema": 2,
     "version": "1.21",
     "world": null

@@ -95,7 +95,6 @@ export async function renderImage(
 // Defines image loader
 export async function loadImage(
     archive: Archive,
-    season: string,
     image: string,
     quality: number | undefined,
     scale: number | undefined
@@ -108,7 +107,7 @@ export async function loadImage(
         case 1:
         case 2: {
             try {
-                const path = `./archives/${season}/gallery/${image}`;
+                const path = `./archives/${archive.season}/gallery/${image}`;
                 const render = await renderImage(path, quality, scale);
                 return render;
             }

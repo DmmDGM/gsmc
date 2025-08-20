@@ -13,7 +13,7 @@ export const api = new Elysia({ prefix: "/api" })
     .get("/:season/gallery/:image", async ({ params: { image, season }, query: { quality, scale }, set, status }) => {
         // Loads gallery image
         const archive = loadArchive(season);
-        const result = await loadImage(archive, season, image, quality, scale);
+        const result = await loadImage(archive, image, quality, scale);
         set.headers["cache-control"] = "max-age=86400";
         set.headers["content-type"] = result.type;
         return result.buffer;

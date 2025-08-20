@@ -3,10 +3,11 @@ import { useRoute } from "preact-iso";
 import { useEffect, useState } from "preact/hooks";
 import { loadArchive, parseArchive } from "../archive";
 import { contexts } from "../contexts";
+import { Divider } from "../parts/divider";
 import { Separator } from "../parts/separator";
 import { Shortcut } from "../parts/shortcut";
-import "./season.css";
 import { loadImage } from "../gallery";
+import "./season.css";
 
 // Defines member
 function Member({ name, uuid }) {
@@ -129,7 +130,7 @@ export function Season() {
                     )) }
                 </div>
             </div>
-            <Separator/>
+            <Divider/>
             <div class="plugins">
                 <h3>Plugins</h3>
                 <div>
@@ -140,7 +141,7 @@ export function Season() {
                     ) }
                 </div>
             </div>
-            <Separator/>
+            <Divider/>
             <div class="mods">
                 <h3>Mods</h3>
                 <div>

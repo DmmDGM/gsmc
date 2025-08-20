@@ -1,0 +1,10 @@
+/* Divider */
+.divider {
+    display: flex;
+    gap: 0px 30px;
+    justify-content: center;
+
+    & span {
+        color: var(--sd-mono-200);
+    }
+}

@@ -197,6 +197,7 @@
             "url": "https://modrinth.com/plugin/bluemap"
         }
     ],
+    "season": "s4",
     "schema": 1,
     "time": "2023/06/27 - 2023/09/21",
     "version": "1.20.1",
