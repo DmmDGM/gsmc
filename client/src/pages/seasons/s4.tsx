@@ -1,5 +1,3 @@
 export function S4() {
-    return (
-        <div>s4</div>
-    );
+    return <div>s4</div>;
 }

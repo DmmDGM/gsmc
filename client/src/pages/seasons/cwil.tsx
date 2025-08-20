@@ -1,5 +1,3 @@
 export function CWIL() {
-    return (
-        <div>CWIL</div>
-    );
+    return <div>CWIL</div>;
 }

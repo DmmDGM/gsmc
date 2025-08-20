@@ -1,5 +1,3 @@
 export function S5() {
-    return (
-        <div>s5</div>
-    );
+    return <div>s5</div>;
 }
