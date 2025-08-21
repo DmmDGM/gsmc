@@ -1,3 +1,15 @@
+// Imports css
+import "./cwil.css";
+
+// Defines content
 export function CWIL() {
-    return <div>CWIL</div>;
+    // Creates content
+    return <div id="cwil">
+        <section>
+            <h3>Coming Soon!</h3>
+            <p>
+                .w.
+            </p>
+        </section>
+    </div>;
 }
