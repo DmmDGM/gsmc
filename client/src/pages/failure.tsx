@@ -1,14 +1,25 @@
 // Imports
 import { useLocation } from "preact-iso";
 
+// Imports parts
+import { Crumbs } from "../parts/separator";
+import { Shortcut } from "../parts/shortcut";
+
+// Imports css
+import "./failure.css";
+
 // Defines failure
 export function Failure() {
     // Redirects pages
     const { path, route } = useLocation();
-    if(path === "/") route("/home", true);
+    if(path === "/") route("/nest", true);
+    if(path === "/home") route("/nest", true);
     
     // Creates failure
-    return (
-        <div>failure</div>
-    );
+    return <div id="failure">
+        <h1>Honk!</h1>
+        <h2>I think you might be lost here!</h2>
+        <Crumbs/>
+        <Shortcut href="/nest">Return to Nest</Shortcut>
+    </div>;
 }

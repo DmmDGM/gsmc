@@ -41,5 +41,10 @@ export function Seasons() {
         const { alt, src } = context.banner;
         return (<Card src={ src } alt={ alt } season={ season }></Card>);
     });
-    return <div id="seasons">{ children }</div>;
+    return <div id="seasons">
+        <h1>Seasons Archive</h1>
+        <div id="list">
+            { children }
+        </div>
+    </div>;
 }

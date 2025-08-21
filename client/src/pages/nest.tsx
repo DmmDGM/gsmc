@@ -6,7 +6,7 @@ import { Crumbs, Dots } from "../parts/separator";
 import { Shortcut } from "../parts/shortcut";
 
 // Imports css
-import "./home.css";
+import "./nest.css";
 
 // Defines clock
 function Clock({ target }) {
@@ -48,10 +48,10 @@ function Milestone({ alt, children, direction, src, title }) {
     else throw new Error("Invalid direction");
 }
 
-// Defines home
-export function Home() {
-    // Creates home
-    return <div id="home">
+// Defines nest
+export function Nest() {
+    // Creates nest
+    return <div id="nest">
         <div id="banner">
             <h1>Geesecraft</h1>
             <p class="center">A Minecraft Server with <b><u>Actual</u></b> Freedom and Democracy.</p>
@@ -72,7 +72,7 @@ export function Home() {
         <div id="cwil">
             <h3>Geesecraft: College While It Lasts (CWIL)</h3>
             <p>
-                Checkout our latest season - this time hosted by DmmD instead of iiPython!
+                Check out our latest season - this time hosted by DmmD instead of iiPython!
                 Unlike all other seasons, this one will remain active for the entirety of our college lives rather than being an annual event.
                 We know that college is hard and life can get tough sometimes, that's why we hope this place will forever serve as our little pond that can let us escape from responsibilities briefly and give us some time to relax and chill with friends.
             </p>

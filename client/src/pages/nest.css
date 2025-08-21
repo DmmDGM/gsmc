@@ -50,8 +50,8 @@
     }
 }
 
-/* Home */
-#home {
+/* Nest */
+#nest {
     & #banner, & #timer, & #cwil, & #legacy, & #invite, & #motto {
         align-items: center;
         display: flex;

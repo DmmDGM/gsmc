@@ -1,53 +1,66 @@
+/* Card */
+& .card {
+    aspect-ratio: 4 / 3;
+    background-color: var(--sd-mono-200);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    opacity: 50%;
+    padding: 15px 15px;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+    width: 25%;
+
+    &:hover {
+        opacity: 100%;
+    }
+
+    & img {
+        height: 40%;
+        object-fit: cover;
+    }
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px 0px;
+    }
+}
+
 /* Seasons */
 #seasons {
     display: flex;
-    flex-wrap: wrap;
-    gap: 25px 25px;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 50px 0px;
     padding: 50px 50px;
 
-    & .card {
-        aspect-ratio: 4 / 3;
-        background-color: var(--sd-mono-200);
-        border-radius: 5px;
+    & h1 {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    & #list {
         display: flex;
-        flex-direction: column;
-        gap: 10px 0px;
-        opacity: 50%;
-        padding: 15px 15px;
-        text-decoration: none;
-        transition: opacity 0.2s ease;
-        width: 25%;
+        flex-wrap: wrap;
+        gap: 25px 25px;
+        justify-content: space-around;
 
-        &:hover {
-            opacity: 100%;
+        @media screen and (max-width: 750px) {
+            & .card {
+                width: 40%;
+            }
         }
 
-        & img {
-            height: 40%;
-            object-fit: cover;
-        }
-
-        & div {
-            display: flex;
+        @media screen and (max-width: 600px) {
+            align-items: center;
             flex-direction: column;
-            gap: 5px 0px;
-        }
-    }
 
-    @media screen and (max-width: 750px) {
-        & .card {
-            width: 40%;
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        align-items: center;
-        flex-direction: column;
-
-        & .card {
-            aspect-ratio: 3 / 2;
-            width: 75%;
+            & .card {
+                aspect-ratio: 3 / 2;
+                width: 75%;
+            }
         }
     }
 }

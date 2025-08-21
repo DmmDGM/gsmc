@@ -3,13 +3,16 @@ import { render } from "preact";
 import { LocationProvider, Router, Route } from "preact-iso";
 
 // Imports pages
+import { Community } from "./pages/community";
+import { Extra } from "./pages/extra";
 import { Failure } from "./pages/failure";
-import { Home } from "./pages/home";
+import { Nest } from "./pages/nest";
+import { Privacy } from "./pages/privacy";
 import { Season } from "./pages/season";
 import { Seasons } from "./pages/seasons";
-import { Logo } from "./parts/logo";
 
 // Imports parts
+import { Logo } from "./parts/logo";
 import { Shortcut } from "./parts/shortcut";
 import { Watermark } from "./parts/watermark";
 
@@ -24,7 +27,7 @@ export function App() {
         <header>
             <Logo/>
             <nav>
-                <Shortcut href="/home">Home</Shortcut>
+                <Shortcut href="/nest">Nest</Shortcut>
                 <Shortcut href="/seasons">Seasons</Shortcut>
                 <Shortcut href="/community">Community</Shortcut>
                 <Shortcut href="/privacy">Privacy</Shortcut>
@@ -33,12 +36,12 @@ export function App() {
         </header>
         <main>
             <Router>
-                <Route path="/home" component={Home} />
+                <Route path="/nest" component={Nest} />
                 <Route path="/seasons" component={Seasons} />
                 <Route path="/seasons/:season" component={Season} />
-                <Route path="/community" component={Season} />
-                <Route path="/privacy" component={Season} />
-                <Route path="/extra" component={Season} />
+                <Route path="/community" component={Community} />
+                <Route path="/privacy" component={Privacy} />
+                <Route path="/extra" component={Extra} />
                 <Route default component={Failure} />
             </Router>
         </main>
