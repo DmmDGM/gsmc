@@ -1,17 +1,17 @@
 // Imports parts
-import { Crumbs } from "../parts/separator";
-import { Shortcut } from "../parts/shortcut";
+import { Link } from "../../parts/portal";
+import { Topic } from "../../parts/topic";
+import { Crumbs } from "../../parts/spread";
 
 // Imports css
-import "./community.css";
+import "./index.css";
 
 // Defines community
 export function Community() {
     // Creates community
     return <div id="community">
         <h1>Geese Community</h1>
-        <section>
-            <h3>Welcome</h3>
+        <Topic theme="Welcome">
             <p>
                 Welcome to Geesecraft!
                 A server that's focused on <b>fun</b>, <b>friends</b>, and, most importantly, <b>freedom</b>.
@@ -19,15 +19,14 @@ export function Community() {
 
             </p>
             <p>
-                Feel free to join our <Shortcut href="https://discord.gg/HYgcp85g6u">Discord server</Shortcut>.
+                Feel free to join our <Link href="https://discord.gg/HYgcp85g6u">Discord server</Link>.
             </p>
             <p>
-                Or check out our <Shortcut href="/seasons">Seasons Archive</Shortcut> to learn more about Geesecraft and its past!
+                Or check out our <Link href="/seasons">Seasons Archive</Link> to learn more about Geesecraft and its past!
             </p>
-        </section>
+        </Topic>
         <Crumbs/>
-        <section>
-            <h3>Rules</h3>
+        <Topic theme="Rules">
             <p>
                 We try to minimize the number of rules on this server.
                 After all, this isn't your average "make sure to have fun" server that also imposed tons of weird rules along side to restrict your play-style and maximize profit from your wallet.
@@ -45,10 +44,9 @@ export function Community() {
             <p>
                 #kthxbai
             </p>
-        </section>
+        </Topic>
         <Crumbs/>
-        <section>
-            <h3>Culture</h3>
+        <Topic theme="Culture">
             <p>
                 BREERAAEAAADAADAAAAAAAD!
             </p>
@@ -58,6 +56,6 @@ export function Community() {
             <p>
                 YUHHHHHHH! GIANT BREAAAAAAAAAAAD!
             </p>
-        </section>
+        </Topic>
     </div>
 }

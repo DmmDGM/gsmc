@@ -13,7 +13,7 @@ import { Seasons } from "./pages/seasons";
 
 // Imports parts
 import { Logo } from "./parts/logo";
-import { Shortcut } from "./parts/shortcut";
+import { Shortcut } from "./parts/portal";
 import { Watermark } from "./parts/watermark";
 
 // Imports css

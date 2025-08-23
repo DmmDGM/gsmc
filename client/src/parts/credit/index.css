@@ -1,5 +1,4 @@
-/* Watermark */
-.watermark {
+.credit {
     color: var(--sd-mono-500);
     display: flex;
     font-size: 10px;

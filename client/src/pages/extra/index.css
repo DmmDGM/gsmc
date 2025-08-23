@@ -1,0 +1,13 @@
+/* Extra */
+#extra {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0px;
+    padding: 50px 50px;
+
+    & h1 {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+}

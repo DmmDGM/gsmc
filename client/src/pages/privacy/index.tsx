@@ -1,3 +1,6 @@
+// Imports parts
+import { Topic } from "../parts/region";
+
 // Imports css
 import "./privacy.css";
 
@@ -6,8 +9,7 @@ export function Privacy() {
     // Creates privacy
     return <div id="privacy">
         <h1>Privacy Policy</h1>
-        <section>
-            <h3>Your Data</h3>
+        <Topic theme="Your Data">
             <p>
                 We don't store your data.
             </p>
@@ -29,6 +31,6 @@ export function Privacy() {
             <p>
                 #kthxbai
             </p>
-        </section>
+        </Topic>
     </div>
 }

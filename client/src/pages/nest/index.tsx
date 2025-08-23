@@ -2,8 +2,8 @@
 import { useEffect, useState } from "preact/hooks";
 
 // Imports parts
-import { Crumbs, Dots } from "../parts/separator";
-import { Shortcut } from "../parts/shortcut";
+import { Crumbs, Dots } from "../parts/spread";
+import { Shortcut } from "../parts/portal";
 
 // Imports css
 import "./nest.css";

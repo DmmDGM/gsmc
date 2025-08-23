@@ -2,11 +2,11 @@
 import { useLocation } from "preact-iso";
 
 // Imports css
-import "./shortcut.css";
+import "./index.css";
 
-// Defines shortcut
-export function Shortcut({ children, href }) {
-    // Configures attributes
+// Defines element
+export default function({ children, href }: { children: any; href: string; }) {
+    // Creates attributes
     const { path } = useLocation();
     const url = new URL(href, location.origin);
     const active = path.startsWith(href) && "active";
@@ -15,8 +15,8 @@ export function Shortcut({ children, href }) {
         target: "_blank"
     };
 
-    // Creates shortcuts
-    return <a href={ href } class={ `shortcut ${active}` } { ...external }>
+    // Creates element
+    return <a href={ href } class={ `link ${active}` } { ...external }>
         { children }
     </a>;
 }

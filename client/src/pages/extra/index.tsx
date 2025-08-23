@@ -1,30 +1,29 @@
 // Imports parts
-import { Crumbs } from "../parts/separator";
-import { Shortcut } from "../parts/shortcut";
+import { Link } from "../../parts/portal";
+import { Topic } from "../../parts/topic";
 
 // Imports css
-import "./extra.css";
+import "./index.css";
 
 // Defines extra
 export function Extra() {
     // Creates extra
     return <div id="extra">
         <h1>More About Geesecraft</h1>
-        <section>
-            <h3>FAQ</h3>
+        <Topic theme="FAQ">
             <p>
                 Q: How to join the server?
             </p>
             <p>
-                A: Join our <Shortcut href="https://discord.gg/HYgcp85g6u">Discord server</Shortcut> and tell us your username.
+                A: Join our <Link href="https://discord.gg/HYgcp85g6u">Discord server</Link> and tell us your username.
                 We will whitelist you once we see your message.
             </p>
             <p>
                 Q: It says I need to install a bunch of mods. How do I install mods?
             </p>
             <p>
-                A: Install <Shortcut href="https://fabricmc.net/">Fabric MC</Shortcut> as your Minecraft client.
-                Then install <Shortcut href="https://modrinth.com/mod/automodpack">Automodpack</Shortcut> and place it in your mods folder.
+                A: Install <Link href="https://fabricmc.net/">Fabric MC</Link> as your Minecraft client.
+                Then install <Link href="https://modrinth.com/mod/automodpack">Automodpack</Link> and place it in your mods folder.
             </p>
             <p>
                 Q: Why geese?
@@ -32,6 +31,6 @@ export function Extra() {
             <p>
                 A: Because honk.
             </p>
-        </section>
+        </Topic>
     </div>
 }

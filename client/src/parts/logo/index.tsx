@@ -1,9 +1,9 @@
 // Imports css
-import "./logo.css";
+import "./index.css";
 
-// Defines logo
-export function Logo() {
-    // Creates logo
+// Defines element
+export default function() {
+    // Creates element
     return <div class="logo">
         <img src="/bread.avif" alt="Bread"/>
         <span>Geesecraft</span>

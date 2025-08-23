@@ -2,11 +2,11 @@
 import { useLocation } from "preact-iso";
 
 // Imports parts
-import { Crumbs } from "../parts/separator";
-import { Shortcut } from "../parts/shortcut";
+import { Crumbs } from "../parts/spread";
+import { Shortcut } from "../parts/portal";
 
 // Imports css
-import "./failure.css";
+import "./index.css";
 
 // Defines failure
 export function Failure() {
